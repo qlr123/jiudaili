@@ -1,0 +1,55 @@
+#banner {
+	position: relative;
+	width: 286px;
+	height: 286px;
+	overflow: hidden;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#bannerList {
+	position: absolute;
+}
+
+#bannerList li {
+	width: 286px;
+	height: 286px;
+	float: left;
+}
+
+#bannerList img {
+	display: block;
+	width: 286px;
+	height: 286px;
+}
+
+
+
+#nums {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#nums li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	background: white;
+	color: red;
+	cursor: pointer;
+	margin-left: 10px;
+}
+#nums li.hover,
+#nums li:hover {
+	
+	background: red;
+	color: white;
+}

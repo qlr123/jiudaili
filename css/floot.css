@@ -1,0 +1,70 @@
+/* 底部样式 */
+a{
+	color: #000;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+a:hover{
+	color: #f00;
+	text-decoration:underline;
+}
+footer{
+	width: 100%;
+	height: 260px;
+	background: #3f3e3e;
+	
+}
+.end{
+	width: 1000px;
+	height: 260px;
+	margin: 0 auto;
+	position: relative;
+}
+.end .end1{
+	width: 650px;
+	height: 1px;
+}
+.end li{
+	float: left;
+	width: 70px;
+	height: 40px;
+	margin-top: 10px;
+	line-height: 40px;
+}
+.end li a{
+	color: #fff;
+}
+.banquan{
+	margin-top: 70px;
+	width: 650px;
+	height: 100px;
+	font-size: 12px;
+	color: #cccaca;
+}
+.banquan p{
+	margin-top: 5px;
+}
+.banben-tu img{
+	width: 130px;
+}
+.banben-tu li{
+	width: 130px;
+	float: left;
+	margin-right: 10px;
+}
+.banben-erweima{
+	position: absolute;
+	top: 45px;
+	right: 0;
+}
+.banben-erweima p{
+	color: #cccaca;
+	font-size: 14px;
+}
+.banben-erweima li{
+	width: 140px;
+	height: 152px;
+	text-align: center;
+}

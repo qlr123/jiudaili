@@ -1,0 +1,53 @@
+#banner {
+	position: relative;
+	width: 720px;
+	height: 270px;
+	margin: 0 auto;
+}
+
+
+
+#bannerList li {
+	width: 720px;
+	height: 270px;
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#bannerList li:first-child {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+#bannerList img {
+	width: 720px;
+	height: 270px;
+}
+
+
+
+#nums {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#nums li {
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	background: white;
+	color: red;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+#nums li.hover,
+#nums li:hover {
+	background: #00f;
+	color: white;
+}
