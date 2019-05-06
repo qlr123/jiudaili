@@ -1,0 +1,389 @@
+a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.pindao{
+	width: 1000px;
+	margin: 0 auto;
+}
+.p-top{
+    background: #f1f1f1;
+    margin-top: 10px;
+	height:34px;
+	width: 1000px;
+	line-height: 34px;
+}
+.p-top h3{
+	float:left;
+	width:155px;
+	height:34px;
+	background: #b70100;
+	text-align: center;
+	font-weight: normal;
+	color: #fff;
+	font-size: 20px;
+}
+.p-top span{
+	float: right;
+    padding-right: 10px;
+    font-size: 12px; 
+}
+.p-search{
+	width: 978px;
+	height:116px;
+    border: #ede8d7 1px solid;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.p-search>ul{
+	width:978px;
+	height:116px;
+}
+.p-search>ul>li{
+	position: relative;
+	border-bottom: #d1d1d1 1px dotted;
+    line-height: 26px;
+    font-size: 14px;
+    padding: 6px 0;
+    width:898px;
+    height: 33px;
+    padding-left: 80px;
+}
+.p-search>ul>li span{
+	position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 0;
+    top: 6px;
+    text-align: center;
+    background: #f3f3f3;
+}
+.pdxx li{
+	float:left;
+	padding: 0 10px;
+}
+.pdxx a:hover,.p-x-main a:hover,.p-img a:hover,.link a:hover,a.hover,.f-right a:hover{
+	color: #b00;
+}
+
+.p-menu{
+	width: 1000px;
+	height:50px;
+    margin-top: 10px;
+}
+.p-menu li{
+	float: left;
+    font-size: 22px;
+    width: 156px;
+    margin-right: 10px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #077eb0;
+    color: #fff;
+    cursor: pointer;
+}
+.p-menu li:last-child,.p-menu li:nth-child(5){
+	background:#0196d4;
+}
+.p-menu li:hover,.p-menu li.hover{
+	background: red;
+	color:yellow;
+}
+.p-menu a:hover{
+	text-decoration: none;
+}
+
+.p-img{
+	width: 1000px;
+	height:2821px;
+    padding-bottom: 20px;
+}
+.p-img img{
+	 width:326px; 
+	 height:175px; 
+}
+.p-img dl{
+	margin-top: 10px;
+    width: 326px;
+    height:207px;
+	float:left;
+}
+.teshu{
+	margin-left: 11px;
+	margin-right: 11px;
+}
+.p-img dd{
+    height: 32px;
+    background: #e1e1e1;
+    width: 326px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    font-size:14px;
+}
+.p-img a{
+	color: #000;
+}
+
+/*白酒意向*/
+.yixiang{
+	width:1000px;
+	height:498px;
+	margin-top: 10px;
+    padding-bottom: 10px;
+}
+.yixiang h3{
+	width: 1000px;
+    height: 34px;
+    background: #f1f1f1;
+}
+.yixiang ul img{
+	width:80px;
+	 height:90px;
+}
+.yixiang li{
+	width: 326px;
+    height: 106px;
+    float: left;
+    background: #f1f1f1;
+    margin-top: 10px;
+}
+.yixiang li img{
+	float: left;
+    margin: 8px 0 0 8px;
+}
+.yixiang li span{
+	float:left;
+	width: 222px;
+    margin: 8px 0 0 8px;
+    height: 90px;
+}
+.yixiang li h4{
+	font-size: 14px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.yixiang li p{
+    color: #666;
+    font-size: 12px;
+    padding-left: 10px;
+    width: 212px;
+    line-height: 18px;
+}
+
+
+.p-xixin{
+	width: 1000px;
+	height: 310px;
+}
+.p-x-main{
+	width: 245px;
+    float: left;
+    height:310px;
+    margin-right: 5px;
+}
+.p-x-main h3{
+	background: #f3f3f3;
+    height: 34px;
+    color: #000;
+    line-height: 34px;
+    padding-left: 10px;
+    border-left: #d00000 3px solid;
+    font-size: 16px;
+}
+.p-x-main h3 span{
+	float: right;
+    padding-right: 10px;
+    font-weight: normal;
+    font-size: 12px;
+}
+.p-x-main ul{
+	padding: 8px;
+    overflow: hidden;
+}
+.p-x-main li{
+	width:226px;
+	line-height: 26px;
+    color: #999;
+    height: 26px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.p-x-main a:hover{
+	color:#333;
+}
+
+.zixun{
+	width:1000px;
+	margin-top: 10px;
+}
+.zixun h3{
+	height: 34px;
+    width: 1000px;
+    background: #f1f1f1;
+}
+.zixun h3 span{
+	float: right;
+    line-height: 34px;
+    padding-right: 10px;
+    font-size: 12px;
+    color: #acacac;
+    font-weight: normal;
+}
+.z-main{
+	width:1000px;
+	height: 376px;
+	margin-top: 10px;
+    background: #f1f1f1;
+}
+.z-m-details{
+	width: 480px;
+    height: 168px;
+    float: left;
+    margin: 10px;
+}
+.z-m-details img{
+	width:178px;
+	height:133px;
+}
+.z-m-details h4{
+	background: url(../images/pindao_12.jpg) no-repeat;
+    height: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+.z-m-details h4 span{
+	float: right;
+    padding-right: 10px;
+    font-weight: normal;
+    font-size: 12px;
+}
+.z-m-details h4 a{
+	color: #FFFFFF;
+}
+.z-m-details>a{
+	float: left;
+    margin-top: 10px;
+}
+
+
+.z-m-neirong{
+	width: 285px;
+	height: 134px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.z-m-neirong h5 a{
+	line-height: 24px;
+    color: #d00000;
+    font-size: 14px;
+}
+.z-m-neirong li{
+	line-height: 22px;
+    float: left;
+    width: 285px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #525252;
+    font-size: 12px;
+}
+
+.tupian{
+	width: 1000px;
+	height:220px;
+}
+.tupian a{
+	width: 495px;
+	height: 100px;
+    margin-top: 10px;
+}
+.tupian a:nth-child(2n+1){
+	float: left;
+}
+.tupian a:nth-child(2n){
+	float: right;
+}
+
+
+.link{
+	width:1000px;
+	height:92px;
+	margin-top: 10px;
+}
+.link h3{
+	height: 30px;
+}
+.link h3 span{
+	color: #666;
+}
+.allLink{
+	padding: 10px;
+    line-height: 20px;
+    border: #e2e2e2 1px solid;
+}
+.allLink a{
+	padding: 0 4px;
+}
+
+/*分类*/
+.fenlei{
+	border-top: 2px #242424 solid;
+	width:1000px;
+	height: 148px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.f-left{
+	width: 90px;
+    background: #e0e0e0;
+    padding: 6px 0 10px 10px;
+    float: left;
+}
+.f-left li{
+	width: 80px;
+	height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    text-align: right;
+    background: url(../images/bottom_01.gif) no-repeat;
+    font-size: 12px;
+}
+.f-right{
+	width: 890px;
+    float: left;
+    background: #f1f0f0;
+    padding-left: 10px;
+    padding: 6px 0 8px 10px;
+}
+.f-right li{
+	line-height: 22px;
+    width: 890px;
+    float: left;
+    height: 22px;
+    text-align: left;
+    font-size: 12px;
+}
+.f-right li a{
+	width: 80px;
+    float: left;
+}
+.f-right span{
+	line-height: 24px;
+    float: left;
+    height: 24px;
+    width: 890px;
+    text-align: left;
+}
+.f-right span a{
+	padding-right: 5px;
+    font-size: 12px;
+}
+a[class="hover"]:hover{
+	color:#f00;
+	text-decoration: none;
+}

@@ -1,0 +1,273 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.j-top{width: 100%;background: #f7f7f7;
+height: 26px;
+border-bottom: 1px solid #e7e7e7;
+line-height: 26px;
+font-size: 12px;}
+.jc-top{width: 1190px;margin: 0 auto;background: red;}
+.j-left{width:180px;float: left;}
+.j-right{width:500px; float: right;text-align: right;}
+.j-center {width:300px;float:right; text-align: right;}
+.j-right li{float: left; margin: 0 10px;}
+.j-center ul li{float: left;margin-left: 10px;}
+.j-center ul li a{color: red;}
+.j-center ul{margin-left: 200px;}
+/*    */
+.mei{width: 100%;height: 80px;  margin-top: 25px;}
+.jkj{;width: 1190px;margin: 0 auto;}
+.jkj h1 img{display: block;}
+.jkj h1{float: left;}
+.jkj-center{width: 600px;height: 80px;float: left;}
+.jkj .input1{
+	margin-top: 25px;
+border: #d03232 2px solid;
+height: 32px;
+width: 400px;
+padding: 0 5px;
+font-size: 14px;}
+.jkj .input2{
+	height: 36px;
+border: 0;
+background: #d03232;
+font-size: 16px;
+color: #fff;
+font-family: "Microsoft Yahei";
+padding: 0 25px;
+position: relative;
+top: 1px;
+margin-left: 10px;
+}
+
+.list li{float: left; font-size: 14px; margin: 0 4px;}
+.list li a:hover{color: red;text-decoration: underline;}
+.jkj-right{width: 160px;height: 80px; float: right;}
+.jkj-right img{display: block;width: 160px;height: 80px;}
+/*头部结束*/
+/*全部酒类*/
+.nav{width: 100%;height: 40px;margin-top: 20px;border-bottom:2px solid #a10b03;}
+.nav .mainn-nav{width: 1190px;height: 40px;margin: 0 auto;}
+.nav .nav-left{
+	float: left;
+width: 185px;
+height: 40px;
+
+background: url(../img/ico11.jpg) no-repeat 190px 15px #a10b03;
+color: #fff;
+font-size: 16px;
+padding: 0 15px;
+line-height: 40px;
+}
+.nav .nav-main{height: 40px;width: 880px; float: left;}
+.nav .n-list li{float: left;line-height: 40px;padding: 0 30px; font-size: 16px;color: black;}
+.nav .n-list li a:hover{color: red;text-decoration: underline;}
+
+
+
+/*以下是banner*/
+.qwe{width: 100%;height: 472px;}
+.banner{width:100%;height:470px;background: url(../img/10582604.jpg)no-repeat;position: absolute;}
+.b-main{height: 470px;width: 1190px;margin: 0 auto; }
+.b-left{width: 215px;height: 470px;background:#fefee9; float: left;}
+.m-list h3{
+height: 32px;
+
+line-height: 32px;
+
+font-size: 12px;
+
+overflow: hidden;
+
+background: #eeeede;
+
+padding: 0 13px;
+
+font-weight: normal;
+
+position: relative;
+}
+
+.m-list .jiu{ width: 215px;height:133px; }
+.m-list .jiu:hover{background: white;}
+.m-list span{float: right;}
+.m-list h3 a img{display: block;float: left; margin: 5px 10px}
+.m-list .jiu p{line-height: 23px;
+padding: 3px 7px 0px 13px;
+border-left: #fff 2px solid; font-size: 12px; float: left;}
+.m-list .jiu-2{height: 110px; width: 215px;}
+.m-list .jiu-2:hover{background: white;}
+.m-list .jiu-2 p{line-height: 23px;
+padding: 3px 7px 0px 13px;
+border-left: #fff 2px solid; font-size: 12px; float: left;}
+.m-list .jiu-3{width: 215px;height: 160px;}
+.m-list .jiu-3:hover{background: white;}
+.m-list .jiu-3 p{line-height: 23px;
+padding: 3px 7px 0px 13px;
+border-left: #fff 2px solid; font-size: 12px; float: left;}
+.m-list .jiu-4{width: 215px;height: 25px; background: red;}
+.m-list .jiu-4 p{line-height: 23px;
+padding: 3px 7px 0px 13px;
+border-left: #fff 2px solid; font-size: 12px; float: left;}
+.m-list .jiu-4 p a:hover{color: red;text-decoration: underline;}
+.m-list .jiu-2 p a:hover{color: red;text-decoration: underline;}
+.m-list .jiu p a:hover{color: red;text-decoration: underline;}
+.m-list .jiu-3 p a:hover{color: red;text-decoration: underline;}
+.b-right{width:195px; height:470px;background: yellow;float:right;}
+.b-right img {display: block;} 
+/*隐藏效果部分*/
+.slide{width: 600px; height:250px; position: absolute;top: 0;left: 295px; display: block;display: none;background: white;}
+
+.slide .sli-list{height:40px;}
+.slide .sli-list li{float: left;line-height: 40px;font-size: 12px; padding: 0px 12px;}
+.sli-list .sli-list{float: right;}
+.slide .sli-list h6{line-height:40px; float: left; padding: 0px 15px;}
+.sli-list1{border-bottom:1px dashed #424141}
+.slide .sli-list li a:hover{color: red;text-decoration: underline;}
+/*隐藏块2*/
+.slide2{width: 600px;height: 130px; position: absolute;top:160px;left: 295px;
+display:none;background: white;}
+.slide2 .sli-list{height:40px;}
+.slide2 .sli-list li{float: left;line-height: 40px;font-size: 12px; padding: 0px 12px;}
+.sli-list .sli-list{float: right;}
+.slide2 .sli-list h6{line-height:40px; float: left; padding: 0px 15px;}
+.sli-list2{border-bottom:1px dashed #424141}
+.slide2 .sli-list li a:hover{color: red;text-decoration: underline;}
+/*隐藏块3*/
+.slide3{width: 600px;height: 162px; position: absolute;top:250px;left: 295px;
+display:none;background: white;}
+.slide3 .sli-list{height:40px;}
+.slide3 .sli-list li{float: left;line-height: 40px;font-size: 12px; padding: 0px 12px;}
+.sli-list .sli-list{float: right;}
+.slide3 .sli-list h6{line-height:40px; float: left; padding: 0px 15px;}
+.sli-list3{border-bottom:1px dashed #424141}
+.slide3 .sli-list li a:hover{color: red;text-decoration: underline;}
+/*以下是center部分*/
+.w-center{width:100%;height:3382px;margin-top:30px;}
+.w-center .bk-center{width:1190px;height: 3382px;margin: auto;}
+.bk-title{font-size: 22px;
+color: #000;
+line-height: 50px;
+
+
+
+height: 50px;}
+
+.bk-list{    border: #e6e6e6 1px solid;height:274px;width: 1190px;
+    overflow: hidden;
+}
+.bk-list li{height: 274px; width:274px; float: left; margin-left: 20px;margin-top: 5px;}
+.bk-list img{display: block;height:220px;width: 237px;text-align: center;margin-left: 24px;}
+.bk-list p{margin-top: 15px;text-align: center;}
+/*以下是推荐部分*/
+.bk-tui{width: 1190px;height: 118px;margin-top: 10;}
+.tu-list li{float: left;}
+/*以下是葡萄酒部分*/
+.bk-pt{height: 50px;line-height: 50px;font-size: 22px;border-bottom: 2px solid red;}
+.bk-pt ul{float: right;}
+.bk-pt ul li{float: left; font-size: 14px;font-weight: normal;padding: 0 8px;}
+/*图片区域*/
+.bkdiv{height: 560px;width:1190px;border-left:#F7F7F7}
+.a-left {height:560px;width:235px;float: left;}
+.bkdiv .A-left p img{width: 235px;height: 417px;display: block;}
+.bkdiv .A-left-fg {padding: 31px 14px;
+font-size: 14px;
+line-height: 28px;
+border-bottom: #ebebeb 1px solid;width: 205px;}
+.bkdiv .A-left-fg a:hover{color: red;text-decoration: underline;}
+
+/*右边*/
+.a-rigth{width: 953px;height: 560px;float:right;}
+.a-rigth-top{width: 935px;height: 300px;}
+.a-rigth .art-list{width: 953px;height: 300px;}
+.a-rigth .art-list li{float: left;height: 300px;}
+.a-rigth .art-list li p{text-align: center;height:51px;line-height: 51px;}
+
+.a-rigth-f{width: 953px;height: 258px;}
+.a-rigth-f .AA-list{width: 953px;height: 258px;float: left;}
+.a-rigth-f .AA-list li img{display: block;}
+.a-rigth-f .AA-list li{float: left;height: 258px;width:189px;border: 1px solid #cecece;border-left: none;}
+.a-rigth-f .AA-list li p{font-size: 14px;
+line-height: 20px;
+padding: 0 12px;text-align: center;}
+.a-rigth-f .AA-list li p:hover{color: red;text-decoration: underline;}
+
+/*以下进口红酒*/
+.hongjiu{border-bottom: #906d1c 2px solid;}
+.h-left{width: 235px;height: 560px;float: left;}
+.h-left-p{width: 235px;height: 300px;}
+.h-left-p li {float: left;border: 1px solid #CECECE;border-left: none;border-top: none;}
+.h-left-p li img{display: block;}
+.h-left-pw{height: 260px;}
+.h-left-pw h4{background: #f8f8f8;
+border-bottom: #d1d1d1 1px solid;
+line-height: 36px;
+padding: 0 10px;
+margin-bottom: 10px;}
+
+.h-left-pw li span{
+	display: block;
+	background: #424141;
+position: absolute;
+left: 10px;
+color: #fff;
+height: 18px;
+width: 18px;
+text-align: center;
+line-height: 18px;
+display: block;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.h-left-pw li{
+	padding: 8px 10px 9px 35px;
+border-bottom: #cccccc 1px dotted;
+position: relative;font-size: 13px;
+}
+
+.h-right{width: 953px;height: 300px;float: right;}
+.h-right .art-list li{float: left;}
+.h-right .art-list li p{text-align: center;}
+
+/*进口红酒和葡萄酒有公用部分*/
+
+/*进口啤酒*/
+.pijiu{border-bottom: #23a34d 2px solid;}
+/*和进口葡萄酒右部分公用css*/
+.pt-right{width:953px;height:518px;float: right;}
+.pt-right li{width: 189px;height: 259px;border: 1px solid #CECECE;border-top: none;border-left: none;float: left; }
+.pt-right li p{font-size: 14px;
+line-height: 20px;
+padding: 0 12px;color: #000000;}
+.pt-right li p:hover{color: red;text-decoration:underline;}
+
+/*以下名庄葡萄酒部分*/
+/*标题通用*/
+.mingz{width: 1190px;height: 476px;}
+.mj-left{width: 190px;height: 475px;float: left; float: left;}
+.mj-left p{height:360px;width:190px;display: block;}
+.m-left-b{padding: 15px 15px;
+font-size: 14px;
+line-height: 28px;
+/*border-bottom: #ebebeb 1px solid*/;color: #333333;}
+.m-left-b a:hover{color: red;text-decoration: underline;}
+
+.mj-mid{width: 290px;height: 475px;float: left;}
+.mj-right{width: 708px;height: 476px;float: right;}
+.mj-right ul li p{font-size: 14px;
+line-height: 20px;
+padding: 0 12px;width: 176px;}
+.mj-right ul li{float: left;width: 176px;height: 238px;border: 1px solid #CECECE;border-top: none;border-left: none;}
+
+
+
+
+
+
+
+
+
+
+
+
