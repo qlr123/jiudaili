@@ -2,6 +2,17 @@ a:hover{
 	cursor: pointer;
 	text-decoration: underline;
 }
+.celan a:nth-child(2n){
+	position: fixed;
+	left:33px;
+}
+.celan a:last-child,.celan a:first-child{
+	top:135px;
+}
+.celan a:nth-child(2n+1){
+	position: fixed;
+	right:33px;
+}
 .pindao{
 	width: 1000px;
 	margin: 0 auto;

@@ -72,7 +72,6 @@
     line-height: 38px;
     text-align: left;
 	width: 402px;
-	height: 38px;
 	position: relative;
 	background: #fff;
     margin-bottom: 4px;
@@ -86,7 +85,30 @@
     width: 101px;
     height: 35px;
 }
-
+.fangda{
+	position: absolute;
+    z-index: 99999;
+    top: -60px;
+    right: -172px;
+    background: #d6f2f2;
+    padding: 10px;
+    display: none;
+	width:170px;
+	height:170px;
+}
+.fangda i{
+	position: absolute;
+    left: 8px;
+    top: 67px;
+}
+.fangda i img{
+	width: 12px!important;
+    height: 19px!important;
+}
+.hezuo-zhongxin .fangda img,.zixun-zhongxin .fangda img{
+	width: 150px;
+	height: 150px;
+}
 .zixun-zhongxin {
 	width: 230px;
 	height: 378px;
@@ -118,14 +140,22 @@
     display: block;
     line-height: 22px;
 }
-.zixun-zhongxin img {
+.zixun-zhongxin .tu {
 	position: absolute;
     right: 0px;
     top: 8px;
     width: 35px;
     height: 35px;
 }
-
+.zixun-zhongxin .fangda i{
+	position: absolute;
+    left: -12px;
+    top: 67px;
+}
+.zixun-zhongxin .fangda{
+	right: -181px;
+	top:-50px;
+}
 .end {
 	width: 100 0px;
 	
