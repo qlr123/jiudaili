@@ -19,6 +19,7 @@
 	font-weight: normal;
 	font-size: 12px;
 	color: #666;
+	line-height: 30px;
 }
 .h-main a:hover{
 	cursor:pointer;
@@ -26,20 +27,25 @@
 .h-main h1 a{
 	padding: 0 4px;
 }
-.h-main div{
+.h-main div:first-of-type{
 	float: right;
 	font-size: 12px;
 }
-.h-main div a{
+.h-main div:first-of-type>a{
 	padding:0 5px;
 }
-.h-main div a:last-child{
+.h-main div:first-of-type img{
+	position: relative;
+    top: -2px;
+    margin-right: 0;
+}
+.h-main div:first-of-type a:last-child{
 	display: inline-block;
 	height:30px;
 	border-left:1px solid #f1f1f1;
 	border-right:1px solid #f1f1f1;
 }
-.h-main div a:last-child:hover{
+.h-main div:first-of-type a:last-child:hover{
 	background:white;
 }
 /*logo*/
@@ -77,24 +83,37 @@
 	margin-left: 43px;
 }
 .s-top{
+	position: relative;
 	width:487px;
-	height: 36px;
-	line-height: 36px;
+	height: 40px;
+	line-height: 34px;
 	border: #d03232 2px solid;
 }
-.s-top span:first-of-type{
-	float:left;
+.btn{
+	padding:7px 25px;
+}
+.s-top .btn-group {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #f2f2f2;
+}
+.dropdown-menu{
+	min-width:93px;
+	text-align: center;
+	top:35px;
+	left:-2px;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+}
+.dropdown-menu li{
+	width:93px;
 	height:36px;
-	width:96px;
-	line-height: 34px;
-    font-size: 12px;
-    background: #cecece;
-    cursor: pointer;
-    text-align: center;
 }
 .s-top input{
 	float:left;
-	width: 275px;
+	width: 371px;
     padding-left: 5px;
     height: 36px;
     line-height: 36px;
@@ -102,8 +121,8 @@
     border-left: #e0e0e0 1px solid;
     outline: 0;
 }
-.s-top span:last-of-type{
-	float:left;
+.s-top .sousuo{
+	float:right;
 	width: 108px;
     height: 36px;
     background: #cc0000;
@@ -127,6 +146,43 @@
     color: #f00;
 }
 /*导航*/
+/*.daohang:hover {
+	display: block;
+}*/
+.h-main .xianshi{
+	display: block;
+}
+.daohang {
+	width: 360px;
+	position: absolute;
+	top: 30px;
+	right: 1px;
+	display: none;
+	background: #fff;
+	border: 1px #ECECEC solid;
+	z-index: 99999;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.daohang>div {
+	margin-top: 10px;
+}
+
+.daohang li {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.daohang dt {
+	float: left;
+	margin-top: 10px;
+}
+
+.daohang dd {
+	margin-left: 62px;
+}
 .nav{
 	height: 46px;
 	border-bottom: #1c78c5 2px solid;
@@ -153,6 +209,10 @@
 	display: none;
 	border-style: solid;
 	border-color: transparent transparent #1c78c5 transparent; 
+}
+.n-main li:hover a{
+	color:#333;
+	text-decoration: none;
 }
 .n-main li:hover span{
 	display: block;
@@ -253,7 +313,7 @@
     position: relative;
     overflow: hidden;
 }
-.lunbo .btn span{
+.lunbo .btns span{
 	cursor: pointer;
     width: 45px;
     height: 45px;
@@ -261,11 +321,11 @@
     z-index: 10;
     position: absolute;
 }
-.lunbo .btn span:first-child{   
+.lunbo .btns span:first-child{   
     background: url(../img/l.png) no-repeat;
     left: 0;
 }
-.lunbo .btn span:last-child{
+.lunbo .btns span:last-child{
     background: url(../img/r.png) no-repeat;
     right: 0;
 }
@@ -284,10 +344,16 @@
     border-radius: 10px;
     background: #ffffff;
     float: left;
-    /**zoom: 1;*/
 }
-.nums li:hover{
+.nums li:hover,.nums li.hover{
 	background:#69aaec;
+}
+.list {
+	position: absolute;
+}
+
+.list li {
+	float: left;
 }
 
 /*展会合作*/
@@ -297,8 +363,6 @@
     height:336px;
 }
 .e-top{
-	width:219px;
-	height:94px;
 	background: #00599b;
     padding: 15px 18px;
 }
@@ -376,6 +440,10 @@
     position: relative;
     overflow: hidden;
 }
+.q-r-bottom ul{
+	width:2145px;
+	position: absolute;
+}
 .q-r-bottom li{
 	float: left;
 	width: 185px;
@@ -420,8 +488,7 @@
 .d-list li{
 	background: #f0f0f0;
     padding: 15px;
-    height: 158px;
-    width:890px;
+    height: 189px;
     margin-top: 12px;
     position: relative;
 }
@@ -556,16 +623,22 @@
     background: url(../img/icon-focusimg-btn-png24-20131225.png) -74px -63px no-repeat;
     right: 0px;
 }
-.minLun{
+.minLun {
+	width: 255px;
+	height: 154px;
+	overflow: hidden;
+	position: relative;
+}
+.minLunList{
 	width: 99999px;
     position: absolute;
     left: 0;
     top: 8px;
 }
-.minLun li{
+.minLunList li{
 	float: left;
 }
-.minLun li img{
+.minLunList li img{
 	width: 255px;
     height: 154px;
 }
@@ -583,7 +656,12 @@
     text-align: center;
     background: #e5e5e5;
     margin-left: 3px;
+    color:#444;
     border-radius: 50%;
+}
+.numberLi li:hover,.numberLi li.hover{
+	background:#bf0a0a;
+	color: #fff;
 }
 .textLi{
 	position: absolute;
@@ -708,7 +786,6 @@
 /*友情链接*/
 .link{
 	width:100%;
-	height:55px;
 	background: #f3f3f3;
     padding: 8px 0;
 }
