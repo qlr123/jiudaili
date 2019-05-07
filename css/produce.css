@@ -1,0 +1,229 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,figure,figcaption{margin:0;padding:0}
+body{font:12px "微软雅黑","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%}
+a{color:#172c45;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;}
+.h_bk{height: 100px;}
+.h_seach{background: #fff;margin-left: 30px;margin-top: 10px;}
+.h_bk .h_adv{background: #fff;width: 440px;margin-top: 20px;}
+.h_xuan .y_type1{top: 56px;}
+/**/
+
+.weizhi{
+	margin: 0 auto;	
+	width: 1000px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #666;
+	/*background: #0D69F2;*/
+}
+/*位置结束*/
+.pro_so {
+	margin: 0 auto;
+	width: 1000px;
+    background: #f9f9f9;
+    border: #e5e5e5 1px solid;
+}
+.pro_so .pro_l {
+    border-bottom: #e5e5e5 1px solid;
+    border-top: #fff 1px solid;
+    font-size: 15px;
+    line-height: 42px;
+}
+.pro_so .pro_l .sl-key {
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+.pro_so .pro_l .sl-already {
+    float: left;
+    width: 850px;
+    padding-top: 8px;
+}
+.pro_so .pro_l .sl-already li {
+    float: left;
+    padding: 0 10px;
+    line-height: 24px;
+    border: #dfdddd 1px solid;
+    font-size: 15px;
+}
+.pro_so .pro_l .sl-key {
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    color: #000;
+}
+.pro_so .pro_l .sl-value {
+    float: left;
+    position: relative;
+    width: 843px;
+    display: inline;
+    border-left: #e5e5e5 1px solid;
+    padding: 7px 0 7px 20px;
+}
+.pro_so .pro_l .sl-value .xlist {
+    overflow: hidden;
+    width: 900px;
+}
+.pro_so .pro_l .sl-value .xlist li {
+    float: left;
+    padding-right: 28px;
+    line-height: 28px;
+}
+/*列表结束*/
+.pro_list{
+	width: 1000px;
+	position: relative;
+    overflow: hidden;
+    /*background: red;*/
+    margin: 0 auto;
+}
+.pro_list li{
+	float: left;
+    width: 308px;
+    margin: 20px 10px 0 15px;
+    display: inline;
+}
+.pro_list h5{
+	font-size: 15px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-bottom: #e5e5e5 1px solid;
+    padding: 0 5px;
+}
+.pro_list p{
+	font-size: 12px;
+    padding: 0 5px;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden
+}
+/*pro_list结束*/
+.fenye{
+	width: 1000px;
+	border: #e5e5e5 1px solid;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 0 20px;
+}
+.fenye a{
+	padding: 0 8px;
+	cursor: pointer;
+}
+/*分页结束*/
+.pro_resou{
+	width: 1045px;
+	height: 40px;
+	background:#cecece;
+	margin: 0 auto;
+}
+.pro_resou h5{
+	font-size: 20px;
+	line-height: 40px;
+	margin-left: 10px;
+}
+/*热搜结束*/
+.pro_p{
+	width: 1000px;
+	/*height: 1000px;
+	background: red;*/
+	margin: 0 auto;
+}
+.pro_pro{
+	float: left;
+    background: #f3f3f3;
+    width: 469px;
+    margin-top: 15px;
+    min-height: 205px;
+}
+.pro_pro h3{
+	color: #c40202;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+.pro_pro ul{
+	padding-left: 25px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.pro_pro li{
+	float: left;
+    width: 80px;
+    line-height: 30px;
+    font-size: 14px;
+    height: 30px;
+    overflow: hidden;
+}
+/*pro_pro结束*/
+.pro_lianjie{
+	width: 1000px;
+/*	background: #0D69F2;*/
+	margin: 0 auto;
+}
+.pro_lianjie h3{
+    padding: 20px 0 0 20px;
+    font-size: 12px;
+    font-weight: normal;
+ 	color: #d71f1f;
+} 
+.pro_lianjie p{
+	font-size: 12px;
+    line-height: 22px;
+    padding: 10px  20px;
+    margin-left:10px ;
+}
+/**/
+
+.footer{
+	
+    padding: 25px 0 40px 0;
+    height: 200px;
+}
+.foot{
+	width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.foot .nav{
+	font-size: 16px;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 30px;
+    background: #3f3e3e;
+    height: 30px;
+    
+    
+}
+.foot .nav a{
+	color: #F1F1F1;
+    padding-right: 12px;
+    
+}
+.xiangqing{
+	font-size: 12px;
+    color: #000;
+    line-height: 20px;
+    text-align: center;
+}
+.biaozhi{
+	margin-top: 16px;
+	padding-left: 235px;
+    
+}
+
+.biaozhi li{
+	float: left;
+	margin-right: 6px;
+	
+}
