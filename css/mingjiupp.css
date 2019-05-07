@@ -442,7 +442,7 @@ a:hover {
 }
 
 /* 右banner图 */
-.banner-2 {
+.banner-box{
 	float: right;
 	margin-top: 10px;
 	width: 210px;
@@ -450,80 +450,109 @@ a:hover {
 	border: 1px solid #e1e2e2;
 }
 
-.banner-2 h1 {
-	margin-left: -1px;
+.banner-box h1{
 	width: 210px;
-	height: 38px;
-	background: #de2828;
-	color: #fff;
+	height: 40xp;
 	font-size: 16px;
 	text-align: center;
-	line-height: 38px;
-}
-
-.jiu-fenlei {
-	overflow: hidden;
-	border-bottom: 1px solid #e2e3e3;
-}
-
-.jiu-fenlei li {
-	margin-top: 5px;
-	float: left;
-	height: 20px;
-}
-
-.jiu-fenlei li a {
-	font-size: 12px;
-	margin: 0 6px;
-}
-
-.jiu-fenlei li:hover {
-	background: #e80000;
-}
-
-.jiu-fenlei li:hover a {
-	background: #e80000;
+	line-height: 40px;
 	color: #fff;
+	background: #de2828;
+	
 }
 
-.banner-02 {
+#banner_2 {
 	position: relative;
+	width: 210px;
+	height: 796px;
+	margin: 0 auto;
 }
 
-.tabcont {
+#bannerList_2{
+	margin-top: 25px;
+}
+#bannerList_2 div {
+	width: 210px;
+	height: 760px;
 	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 
-.tabcont li {
+#bannerList_2 div:first-child {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+#bannerList_2 div li{
 	width: 210px;
 	height: 70px;
-	margin-top: 6px;
+	margin-top: 8px;
 }
-
-.tabcont li img {
-	display: inline-block;
-	width: 67px;
-	height: 59px;
-	float: left;
-	margin: 5px 8px
-}
-
-.tabcont li h3 {
-	width: 100px;
-	float: left;
-	
-	margin-top: 0px;
-	font-size: 13px;
-}
-
-.tabcont li p {
-	width: 120px;
-	float: left;
-	color: #777;
-	font-weight: normal;
+#bannerList_2 div li p{
 	font-size: 12px;
-	line-height: 16px;
+	width: 120px;
+	height: 48px;
+	float: left;
+	margin-left: 10px;
 }
+
+#bannerList_2 div img{
+	width: 67px;
+	height: 58px;
+	float: left;
+	display: inline-block;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#bannerList_2 div h3{
+	font-size: 13px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+#bannerList_2 div h3 a{
+	color: #000;
+	text-decoration: none;
+}
+#bannerList_2  .tabcont a h3 a:hover{
+	color: #f00;
+}
+
+
+#nums_2 {
+	position: absolute;
+	top: -20px;
+
+	width: 210px;
+}
+
+#nums_2 li {
+	float: left;
+	width: 40px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	background: white;
+	color: red;
+	cursor: pointer;
+	margin-left: 2px;
+}
+
+#nums_2 li.hover,
+#nums_2 li:hover {
+	background: #f00;
+	color: white;
+}
+#nums_2 li a{
+	color: #000;
+}
+#nums_2 li.hover,
+#nums_2 li a:hover {
+	color: white;
+}
+
 
 .mingjiu-jiage {
 	width: 210px;
