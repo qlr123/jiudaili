@@ -69,7 +69,7 @@ line-height: 40px;
 .qwe{width: 100%;height: 472px;}
 .banner{width:100%;height:470px;background: url(../img/10582604.jpg)no-repeat;position: absolute;}
 .b-main{height: 470px;width: 1190px;margin: 0 auto; }
-.b-left{width: 215px;height: 470px;background:#fefee9; float: left;}
+.b-left{width: 215px;height: 470px;background:#fefee9; float: left;position: relative}
 .m-list h3{
 height: 32px;
 
@@ -116,7 +116,7 @@ border-left: #fff 2px solid; font-size: 12px; float: left;}
 .b-right{width:195px; height:470px;background: yellow;float:right;}
 .b-right img {display: block;} 
 /*隐藏效果部分*/
-.slide{width: 600px; height:250px; position: absolute;top: 0;left: 295px; display: block;display: none;background: white;}
+.slide{width: 600px; height:250px; position: absolute;top: 0;left:215px; display: block;display: none;background: white;}
 
 .slide .sli-list{height:40px;}
 .slide .sli-list li{float: left;line-height: 40px;font-size: 12px; padding: 0px 12px;}
@@ -125,7 +125,7 @@ border-left: #fff 2px solid; font-size: 12px; float: left;}
 .sli-list1{border-bottom:1px dashed #424141}
 .slide .sli-list li a:hover{color: red;text-decoration: underline;}
 /*隐藏块2*/
-.slide2{width: 600px;height: 130px; position: absolute;top:160px;left: 295px;
+.slide2{width: 600px;height: 130px; position: absolute;top:160px;left: 215px;
 display:none;background: white;}
 .slide2 .sli-list{height:40px;}
 .slide2 .sli-list li{float: left;line-height: 40px;font-size: 12px; padding: 0px 12px;}
@@ -134,7 +134,7 @@ display:none;background: white;}
 .sli-list2{border-bottom:1px dashed #424141}
 .slide2 .sli-list li a:hover{color: red;text-decoration: underline;}
 /*隐藏块3*/
-.slide3{width: 600px;height: 162px; position: absolute;top:250px;left: 295px;
+.slide3{width: 600px;height: 162px; position: absolute;top:250px;left:215px;
 display:none;background: white;}
 .slide3 .sli-list{height:40px;}
 .slide3 .sli-list li{float: left;line-height: 40px;font-size: 12px; padding: 0px 12px;}
