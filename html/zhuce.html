@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册 --美酒网</title>
+		<link rel="stylesheet" type="text/css" href="../css/zhuce.css" />
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="top">
+				<p>您好，欢迎来到美酒网！请
+					<a>登录</a>
+					<a>注册</a>
+				</p>
+				<div class="gf">
+					<a href="index.html">美酒首页</a>
+					<a href="#" class="weibo">官方微博</a>
+					<a href="#" class="weixin">官方微信</a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="main">
+				<div class="logo">
+					<a><img src="../img/logo.jpg" /></a>
+				</div>
+				<div class="biaodan">
+					<div class="b_left">
+						<div class="bl1">
+							<p>* 用户名：</p>
+							<input type="text" id="bl1" />
+							<span>用户名不能少于四个字符</span>
+						</div>
+						<div class="bl2">
+							<p>*用户密码：</p>
+							<input type="password" id="bl2" />
+							<span>密码由6-16位字符组成，请使用数字加字母组合密码</span>
+						</div>
+						<div class="bl3">
+							<p>*确认密码：</p>
+							<input type="password" id="bl3" />
+							<span>请再次输入密码</span>
+						</div>
+						<div class="bl4">
+							<p>*联系电话：</p>
+							<input type="text" id="bl4" />
+							<span>请填写真实手机号，避免错失商机。若找回密码需提供手机号！</span>
+						</div>
+						<div class="bl5">
+							<p>*电子邮箱：</p>
+							<input type="text" id="bl5" />
+							<span>通过邮箱可以找回密码</span>
+						</div>
+						<div class="bl6">
+							<p>*用户类型：</p>
+							<div class="radio">
+								<input type="radio" name="chocie" class="r1" /> 经销商：我是创业者，我来找项目
+								</br>
+								<input type="radio" name="chocie" class="r2" /> 厂家：我是招商企业，来推广项目
+								<div class="buchong">
+									<p>补充公司信息（可选）：</p>
+									<p>招商类型：</p>
+									<input type="radio" name="jiuzhao" /> 白酒招商
+									<input type="radio" name="jiuzhao" /> 保健酒招商
+									<input type="radio" name="jiuzhao" /> 洋酒招商
+									</br>
+									<input type="radio" name="jiuzhao" /> 啤酒招商
+									<input type="radio" name="jiuzhao" /> 葡萄酒招商
+									<input type="radio" name="jiuzhao" /> 黄果米酒招商
+								</div>
+								<div class="buchong1">
+									<p>我可能感兴趣的项目</p>
+									<input type="checkbox" /> 白酒
+									<input type="checkbox"/> 保健酒
+									<input type="checkbox" /> 啤酒
+									</br>
+									<input type="checkbox" /> 洋酒
+									<input type="checkbox" /> 葡萄酒
+									<input type="checkbox"  /> 黄国米酒
+								</div>
+							</div>
+							<span>谢谢合作</span>
+						</div>
+						<div class="bl7">
+							<p>*手机验证码：</p>
+							<input type="text" />
+							<input type="button" value="获取验证码">
+						</div>
+						<div class="bl8">
+							<input type="checkbox" checked="checked" />
+							<p>我已经阅读并同意遵守
+								<a>《美酒网用户服务协议》</a>
+							</p>
+						</div>
+						<div class="bl9">
+							<input type="button" value="立即注册" />
+							<p>已有美酒网账号？
+								<a>点击登录</a>
+							</p>
+						</div>
+					</div>
+					<div class="b_right">
+						<img src="../img/zhuce_15.jpg" />
+					</div>
+				</div>
+				<p class="lastp">高速安全、随时随地找产品/找经销商、看酒业资讯，请关注美酒招商网官方微信
+					<a>去看看>></a>
+				</p>
+			</div>
+		</section>
+		<footer>
+			<div class="end">
+				<ul>
+					<li>
+						<a>关于我们</a>
+						|
+						<a>友情链接</a>
+						|
+						<a>意见投诉</a>
+						|
+						<a>联系我们</a>
+					</li>
+				</ul>
+				<p>版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020 电信与信息服务业务经营许可证：豫ICP备10209129号</p>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			var reg1 = /^\w{4,}/;
+			var reg2 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+			var reg4 = /^1(3|5|6|7|8|9)\d{9}$/;
+			var reg5 = /^\w+@\w+(\.\w+)+$/
+			$(function() {
+				$("#bl1").change(function() {         
+					if(!reg1.test($("#bl1").val())) {            
+						$(".bl1 span").html("用户名在4到20个字符,请确认！");
+						$(".bl1 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
+						         
+					} else {
+						$(".bl1 span").html("该用户名可以注册");
+						$(".bl1 span").css("background","#E9FFEB url(../img/onCorrect.gif) no-repeat")
+					}      
+				});
+				$("#bl2").change(function() {         
+					if(!reg2.test($("#bl2").val())) {            
+						$(".bl2 span").html("新密码由6-16个字符组成，请确认");
+						$(".bl2 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
+						         
+					} else {
+						$(".bl2 span").html("新密码合法");
+						$(".bl2 span").css("background","#E9FFEB url(../img/onCorrect.gif) no-repeat")
+					}      
+				});
+				$("#bl3").change(function() {         
+					if($("#bl3").val()==$("#bl2").val()) {            
+						$(".bl3 span").html("输入正确");
+						$(".bl3 span").css("background","#E9FFEB url(../img/onCorrect.gif) no-repeat")    
+					} else {	
+						$(".bl3 span").html("2次密码不一致,请确认");
+						$(".bl3 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")	    
+					}      
+				});
+
+				$("#bl4").change(function() {         
+					if(!reg4.test($("#bl4").val())) {            
+						$(".bl4 span").html("你输入的手机格式不正确");
+						$(".bl4 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
+						         
+					} else {
+						$(".bl4 span").html("输入正确");
+						$(".bl4 span").css("background","#E9FFEB url(../img/onCorrect.gif) no-repeat")
+					}      
+				});
+				$("#bl5").change(function() {         
+					if(!reg5.test($("#bl5").val())) {            
+						$(".bl5 span").html("你输入的邮箱格式不正确");
+						$(".bl5 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
+						         
+					} else {
+						$(".bl5 span").html("谢谢合作");
+						$(".bl5 span").css("background","#E9FFEB url(../img/onCorrect.gif) no-repeat")
+					}      
+				});
+				$(".r1").click(function(){
+					$(".buchong1").css("display","block")
+					$(".buchong").css("display","none")
+					$(".radio").css("height","144px")
+				})
+				
+				$(".r2").click(function(){
+					$(".buchong").css("display","block")
+					$(".buchong1").css("display","none")
+				})
+				
+
+			})
+		</script>
+	</body>
+
+</html>

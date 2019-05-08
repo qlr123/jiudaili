@@ -311,8 +311,8 @@ footer {
 	right: 2px;
 	top: 2px;
 }
-
-.end{width: 1000px;height: 260px;margin: auto;position: relative;}
+.footer{padding: 0;}
+.end{width: 1000px;height: 260px;margin: auto;position: relative;overflow: hidden;}
 .end .end1{
 	width: 750px;
 	height: 1px;
@@ -329,8 +329,10 @@ footer {
 	text-decoration: none;
 	font-size: 14px;
 }
+.end ul:first-child{height: 34px;margin-top: 20px;}
+.end ul:first-child li{line-height: 34px;height: 34px;margin: 0;}
 .banquan{
-	margin-top: 80px;
+	margin-top: 15px;
 	width: 720px;
 	height: 110px;
 	font-size: 14px;
@@ -343,6 +345,7 @@ footer {
 .banben-tu li{
 	float: left;
 	margin-right: 10px;
+	margin-top: 0;
 }
 .banben-erweima{
 	position: absolute;
