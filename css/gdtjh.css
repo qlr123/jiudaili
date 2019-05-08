@@ -1,0 +1,208 @@
+.n-main li:nth-child(2) span{
+	display: block;
+}
+.n-main:hover li:nth-child(2) span{
+	display: none;
+}
+.n-main:hover li:nth-child(2):hover span{
+	display: block;
+}
+body a:hover{
+	text-decoration: none;
+}
+/*main*/
+.main{
+	width:1190px;
+    margin: 15px auto 0 auto;
+}
+.m-local{
+	width: 1190px;
+	font-size: 14px;
+    padding: 0 0 15px 0;
+    color: #666;
+}
+.m-local a,.m-local a:hover{
+	padding: 0 5px;
+    color: #126db3;
+}
+.m-local img{
+	position: relative;
+    top: -1px;
+}
+/*搜索*/
+.m-search{
+	height: 161px;
+	width: 100%;
+	margin: 0px 0 15px 0;
+    border: #eaeaea 1px solid;
+    padding: 10px 0 10px 32px;
+    background: #f2faff;
+}
+.m-search li{
+	float: left;
+    padding-right: 20px;
+}
+.m-search ul li:first-child{
+	width: 250px;
+}
+.m-search ul li:nth-child(2){
+	width: 230px
+}
+.m-search ul li:last-child{
+	width: 670px
+}
+.searchx h3{
+	font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+}
+.searchx p{
+	font-size: 14px;
+}
+.searchx p a{
+	float: left;
+    display: block;
+    margin: 4px 10px 4px 0px;
+    padding: 3px 5px;
+    background: #fff;
+    border: #d6d6d6 1px solid;
+    box-shadow: 0px 0px 1px 1px #f2f2f2;
+}
+.searchx p a:hover{
+	background: #1c78c5;
+	color:#fff;
+}
+
+
+
+.m-bottom{
+	height: 1870px;
+}
+
+/*展会详情*/
+.m-b-left{
+	width:840px;
+	float: left;
+}
+.m-b-left h3{
+	background: #e7f5ff;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.m-b-left span{
+    padding: 7px 25px;
+    cursor: pointer;
+}
+.m-b-left span a{
+	color: #005aa6;
+}
+.m-b-left .on{
+	background: #1c78c5;
+}
+.m-b-left .on a{
+	color: #fff;
+	text-decoration: none;
+}
+.m-b-list{
+	width:100%;
+}
+
+.m-b-list ul>li{
+	position: relative;
+    padding: 16px 0 16px 150px;
+    border-bottom: #f0f0f0 1px solid;
+    height: 172px;
+}
+.m-b-list li img{
+	width: 130px;
+    position: absolute;
+    left: 0;
+}
+.m-b-list .xinxi{
+    width: 690px;
+    height: 112px;
+}
+.m-b-list .xinxi b{
+	display: block;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 3px;
+    text-shadow: 0px 1px 0px #fff;
+}
+.m-b-list .xinxi span{
+	position: absolute;
+    top: 45px;
+    right: 45px;
+    border: #333 1px solid;
+    padding: 10px;
+    font-size: 24px;
+    text-shadow: 0px 1px 0px #fff;
+    font-weight: bold;
+}
+.m-b-list .xinxi span i{
+	font-style: normal;
+	color: #d50511;
+    font-size: 26px;
+    margin:0 4px;
+}
+.m-b-list .xinxi b a{
+	color: #333;
+}
+.m-b-list .xinxi p{
+	font-size: 14px;
+    line-height: 22px;
+    margin: 4px 0;
+    color: #333;
+}
+
+/*fenye*/
+.m-b-fenye{
+	font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 35px 220px;
+    line-height: 30px;
+}
+.m-b-fenye li{
+	padding: 6px 11px;
+    border: #e0e0e0 1px solid;
+    border-radius: 4px;
+    margin-right: 5px;
+    float:left;
+}
+.m-b-right{
+	width:305px;
+	float: right;
+}
+.m-b-right h3{
+	font-size: 18px;
+    color: #111;
+    line-height: 40px;
+    background: #e7f5ff;
+    padding: 0 10px;
+}
+.m-b-right h3 span{
+	float: right;
+    font-weight: normal;
+    font-size: 12px;
+}
+.bd{
+	overflow: hidden;
+    border: #eaeaea 1px solid;
+    padding: 8px 10px;
+    border-top: 0;
+}
+.bd li{
+	background: url(../img/dot.jpg) no-repeat left center;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 4px;
+    height: 30px;
+    overflow: hidden;
+}
+.m-b-right li a{
+	color: #666;
+}  
