@@ -87,7 +87,7 @@
 						<div class="bl7">
 							<p>*手机验证码：</p>
 							<input type="text" />
-							<input type="button" value="获取验证码">
+							<input type="button" id="bl7" value="获取验证码">
 						</div>
 						<div class="bl8">
 							<input type="checkbox" checked="checked" />
@@ -132,7 +132,9 @@
 			var reg2 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
 			var reg4 = /^1(3|5|6|7|8|9)\d{9}$/;
 			var reg5 = /^\w+@\w+(\.\w+)+$/
+			var flag=false;
 			$(function() {
+				
 				$("#bl1").change(function() {         
 					if(!reg1.test($("#bl1").val())) {            
 						$(".bl1 span").html("用户名在4到20个字符,请确认！");
@@ -169,6 +171,7 @@
 						$(".bl4 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
 						         
 					} else {
+						flag=true;
 						$(".bl4 span").html("输入正确");
 						$(".bl4 span").css("background","#E9FFEB url(../img/onCorrect.gif) no-repeat")
 					}      
@@ -194,7 +197,22 @@
 					$(".buchong1").css("display","none")
 				})
 				
+				
+				$("#bl7").click(function(){
+					if(flag){
+						console.log("11")
+						var val=$("#bl4").val();
+						$.ajax({
+							type:"get",
+							url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/sendCode.do"+"?phone="+val,
+							async:true,
+							
+						});
+					}
+	
+				})
 
+				
 			})
 		</script>
 	</body>
