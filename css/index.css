@@ -1,3 +1,116 @@
+#floorNav {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 32px;
+	border: 1px solid #CECECE;
+	background: #161616;
+	height: 100%;
+	z-index: 20;
+}
+
+#floorNav li {
+	margin-top: 5px;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	color: white;
+	line-height: 32px;
+	font-size: 12px;
+}
+
+#floorNav li:nth-child(1) {
+	background: url(../img/ibar_sprites.png) no-repeat 6px 6px;
+	margin: 50px 0;
+}
+
+#floorNav li:last-child {
+	margin-top: 50px;
+}
+
+
+/*#floorNav li:la(3){margin-top: 50px;}*/
+
+#floorNav li:nth-child(1):hover .ibar_login_box {
+	display: block;
+}
+
+.ibar_login_box {
+	display: none;
+	width: 220px;
+	height: 130px;
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+	z-index: 3;
+	position: absolute;
+	top: 0px;
+	left: -220px;
+}
+
+.ibar_login_box img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+}
+
+.ibar_login_box p {
+	float: left;
+	font-size: 14px;
+	color: #000;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.ibar_login_box .login_btnbox {
+	margin-top: 80px;
+	border-top: 1px dotted #d5d5d5;
+	overflow: hidden;
+	padding-top: 5px;
+	clear: both;
+}
+
+.ibar_login_box .login_btnbox a {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid;
+	color: #333;
+	text-decoration: none;
+	float: left;
+	background-position: 0 -408px;
+	background-repeat: repeat-x;
+	border-color: #e9e9e9;
+}
+
+#floorNav span {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	background: red;
+	line-height: 16px;
+}
+
+#floorNav li:hover span,
+#floorNav li.hover span {
+	display: block;
+}
+
+#floorNav li:last-child {
+	background: red;
+	color: white;
+	border-bottom: none;
+}
+
+
 .n_topbk{display: block;height: 760px;}
 .topest{height: 100px;}
 .topest li{float: left; width:244px;margin-right:6px;height:90px;position: relative;overflow: hidden;}
