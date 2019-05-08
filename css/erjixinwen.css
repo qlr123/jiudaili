@@ -1,0 +1,405 @@
+/* css初始化标签在所有浏览器中的margin、padding值（内外边距） */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+/* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* list elements 列表元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+/* form elements 表单元素 */
+th,
+td,
+div
+
+/* table elements 表格元素 */
+	{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+
+}
+
+a:hover {
+	color: #f00;
+	text-decoration: underline;
+}
+p{
+	font-family: simsun;
+}
+
+/* 头部 */
+header{
+	width: 100%;
+	height: 45px;
+	background: #0067a9;
+}
+.head{
+	width: 1000px;
+	height: 45px;
+	margin: 0 auto;
+}
+.head-nav{
+	float: right;
+	margin-right: 50px;
+}
+.head-nav li{
+	float: left;
+	height: 45px;
+	border-left: 1px solid #555;
+	padding: 0 10px;
+}
+.head-nav li:first-child{
+	border: none;
+}
+.head-nav li a{
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 45px;
+	text-align: center;
+}
+.head-nav li a:hover{
+	color: #ff0;
+}
+
+.gongsi_01{
+	width: 950px;
+	height: 67px;
+	background: #E9E9E9;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding: 25px;
+}
+.gongsi_01 img{
+	display: inline-block;
+	width: 92px;
+	height: 70px;
+	float: left;
+	margin-right: 10px;
+}
+.gongsi_01 h1 a{
+	color: #f00;
+}
+
+.xinwen_zhuti{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/* 左边主题内容 */
+.zhuti_left{
+	width: 730px;
+	height: 2825px;
+	float: left;
+}
+.zhuti_left>p{
+	width: 720px;
+	height: 33px;
+	font-size: 12px;
+	line-height: 33px;
+	border-bottom: 1px solid #eee;
+	color: #333;
+	margin-top: 5px;
+	padding-left: 10px;
+	background: url(../img/bantouhengxian.jpg) no-repeat left center;
+}
+.zhuti_left>p>a{
+	margin: 0 5px;
+	color: #555;
+}
+.zhuti_left>h1{
+	font-weight: normal;
+	font:28px "微软雅黑";
+	height: 96px;
+	line-height: 96px;
+}
+.zhuti_left>span{
+	font:12px simsun;
+}
+.xinwen_fenxiang{
+	height: 52px;
+}
+.zhuti_neirong p{
+	font-size: 15px;
+	text-indent: 2em;
+	line-height: 25px;
+	margin-top: 20px;
+}
+.zhuti_neirong .zhuti_neirong_tu1{
+	text-align: center;
+}
+.btn_01{
+	width:300px;
+	height: 46px;
+	background: #ea272a;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+	line-height: 46px;
+}
+.btn_01 a{
+	font-size: 20px;
+	color: #fff;
+}
+.btn_01 a:hover{
+	text-decoration: none;
+	color: #ff0;
+}
+.liuyan{
+	width: 700px;
+	height: 250px;
+	margin: 0 auto;
+	background: url(../img/dl_news_03.jpg);
+	margin-top: 30px;
+}
+
+.liuyan{
+	font-size: 13px;
+}
+.liuyan h2{
+	width: 700px;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+}
+#txt1,#txt2,#txt3{
+	width: 128px;
+	height: 26px;
+	margin:10px
+}
+#txt4{
+	width: 350px;
+	height: 35px;
+	margin-left: 10px;
+}
+#ckx{
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#btn{
+	width: 85px;
+	height: 26px;
+	border: none;
+	margin-top: 30px;
+	margin-left: 300px;
+	cursor: pointer;
+	background: url(../img/liuyan.gif) no-repeat center center;
+}
+.shengming_1{
+	width: 690px;
+	height: 90px;
+	background: #f7f8fc;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 13px;
+	color: #666;
+	padding: 5px;
+	line-height: 22px;
+}
+.fenpian_1{
+	width: 690px;
+	height: 54px;
+	padding: 5px;
+	background: #f7f8fc;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.fenpian_1 span{
+	display: inline-block;
+	width: 340px;
+	height: 22px;
+	font-size: 12px;
+}
+
+.zuo_zhao_kan{
+	width: 700px;
+	height: 185px;
+	background: #f1f1f1;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.zuo_zhao_kan img{
+	width: 145px;
+	height: 145px;
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 20px;
+	float: left;
+}
+.zuo_zhao_kan div{
+	width: 320px;
+	height: 185px;
+	float: left;
+	margin-left: 30px;
+}
+.zuo_zhao_kan div h2{
+	width: 320px;
+	height: 32px;
+	color: #fff;
+	font-size: 18px;
+	background: #da0002;
+	text-align: center;
+	line-height: 32px;
+	margin-top: 30px;
+}
+.zuo_zhao_kan div p{
+	color: #000;
+	margin-top: 5px;
+	font:bold 16px "microsoft yahei" ;
+	text-align: center;
+}
+.zuo_zhao_kan div span{
+	display: inline-block;
+	width: 320px;
+	color: #be0305;
+	margin-top: 5px;
+	font:bold 14px "microsoft yahei" ;
+	text-align: center;
+}
+
+.end_news_1{
+	width: 700px;
+	height: 310px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.end_news_1 h2{
+	width: 700px;
+	height: 38px;
+	background: url(../img/djyzk_03.jpg) no-repeat left center;
+	border-bottom: 2px solid #ff540c;
+}
+.end_news_1 div{
+	width: 698px;
+	height: 260px;
+	border: 1px solid #ff540c;
+}
+.end_news_1 div li{
+	width: 164px;
+	height: 116px;
+	margin-left: 8px;
+	margin-top: 10px;
+	float: left;
+}
+.end_news_1 div li img{
+	display: inline-block;
+}
+.end_news_1 div li p{
+	width: 164px;
+	height: 26px;
+	background: #eee;
+	text-align: center;
+	line-height: 26px;
+	margin-top: -5px;
+
+}
+.end_news_1 div li p a{
+	font-size: 12px;
+}
+
+
+/* 右边新闻内容 */
+
+.zhuti_right{
+	float: right;
+	width: 260px;
+	height: 1920px;
+}
+.zhuti_right>a>img{
+	margin-top: 20px;
+}
+.xiangguan_xinwen_1{
+	width: 260px;
+	height: 250px;
+	margin-top: 10px;
+}
+.xiangguan_xinwen_1 h2,.xiangguan_xinwen_2 h2{
+	width: 250px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	padding-left: 10px;
+	border-bottom: 2px solid #db0909;
+	background: url(../img/bantouhengxian.jpg) no-repeat left center;
+	
+}
+.xiangguan_xinwen_1 h2 a,.xiangguan_xinwen_2 h2 a{
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	margin-right: 15px;
+}
+.xiangguan_xinwen_1 ul{
+	width: 258px;
+	height: 217px;
+	border: 1px solid #eee;
+}
+.xiangguan_xinwen_1 ul li{
+	font: 16px simsun;
+	line-height: 27px;
+	padding-left: 5px;
+	margin-left: 10px;
+	background: url(../img/pinpai-dian.jpg) no-repeat left center;
+	/* 溢出显示隐藏... */
+	width: 240px;
+	white-space: nowrap;
+	overflow: hidden;
+	
+}
+.xiangguan_xinwen_1 ul li a{
+	display: inline-block;
+	
+}
+
+.xiangguan_xinwen_2 ul{
+	width: 258px;
+	height: 345px;
+	border: 1px solid #eee;
+}
+.xiangguan_xinwen_2 ul li{
+	float: left;
+	width: 72px;
+	height: 81px;
+	margin-left: 10px;
+	margin-top: 5px;
+	font-size: 12px;
+	text-align: center;
+}
+.xiangguan_xinwen_2 ul li img{
+	width: 74px;
+	height: 57px;
+}
