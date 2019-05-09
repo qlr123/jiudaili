@@ -218,6 +218,7 @@ section {
 	margin-left: 10px;
 }
 .bl7 input:nth-child(4) {
+	width: 220px;
 	display: none;
 	color: #f00;
 	border: 0;

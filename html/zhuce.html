@@ -88,7 +88,7 @@
 							<p>*手机验证码：</p>
 							<input type="text" id="code"/>
 							<input type="button" id="bl7" value="获取验证码">
-							<input type="text" id="tishi" value="" />
+							<input type="text" id="tishi" value="" readonly/>
 						</div>
 						<div class="bl8">
 							<input type="checkbox" checked="checked" />
@@ -99,7 +99,7 @@
 						<div class="bl9">
 							<input type="button" id="bl9" value="立即注册"  />
 							<p>已有美酒网账号？
-								<a>点击登录</a>
+								<a href="">点击登录</a>
 							</p>
 						</div>
 					</div>
@@ -209,39 +209,42 @@
 				$("#bl7").click(function(){
 					if(flag){
 						
-						var val=$("#bl4").val();
+						var tel=$("#bl4").val();
 						$.ajax({
 							type:"get",
-							url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/sendCode.do"+"?phone="+val,
+							url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/sendCode.do"+"?phone="+tel,
 							async:true,
 						});
 					}
 				})
 				
-				/*$("#bl9").click(function(){
+				//点击注册按钮
+				$("#bl9").click(function(){
 					var sum=flag+flag1+flag2+flag3+flag4;
 					
-					console.log(sum);
-					console.log(flag,flag1,flag2,flag3,flag4)
-					var val=$("#bl4").val();
+//					console.log(sum);
+//					console.log(flag,flag1,flag2,flag3,flag4)
+					var tel=$("#bl4").val();
 					var yzm=$("#code").val();
-					console.log(val,yzm)
-//					if(sum==5){
-						$.ajax({
-							type:"get",
-//							url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do"+"?"+"code="+yzm+"&phone="+val,
-							
-							url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do?code=5841456&phone=13393852807",
-							async:true,
-							
-							success:function(data){
-							 console.log(data)
+//					console.log(val,yzm)
+					if(sum==5){
+						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do?code="+yzm+"&phone="+tel,function(data){
+							console.log(data);
+//							console.log(data.msg)
+							$("#tishi").val(data.msg)
 							 $("#tishi").show(); 
-							 $("#tishi").val=data.msg;
+							 if(data.code){
+							 	console.log("验证成功")
+//							 	location.href="index.html"
+							 }
+							 else{
+							 	console.log("验证失败")
+							 }
+						})
 							 
-							}
-						});
-				})*/
+					}
+					
+				})
 
 				
 			})
