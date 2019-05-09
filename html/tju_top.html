@@ -227,7 +227,7 @@
 <!--导航-->
 <div class="nav">
 	<div class="n-main">
-		<ul>
+		<ul class="ti">
 			<li>
 				<a href="#">展会首页</a><span></span></li>
 			<li>
@@ -246,3 +246,17 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$(function(){
+		$(".h-main").find("a:last-of-type").hover(function(){
+					$(this).next().addClass("xianshi")
+				},function(){
+					$(this).next().removeClass("xianshi")
+		});
+		$(".ti li").hover(function(){
+			$(this).addClass("hover").siblings().removeClass("hover");
+		},function(){
+			$(this).removeClass("hover");
+		})
+	})
+</script>

@@ -15,7 +15,7 @@ function Lunbo(name){
 Lunbo.prototype.autoPlay = function(){	
 	this.timer = setInterval(()=>{
 		this.move();
-	},1000);	
+	},2000);	
 }
 Lunbo.prototype.getNum = function(name){
 	this.nums = document.getElementsByClassName(name)[0];

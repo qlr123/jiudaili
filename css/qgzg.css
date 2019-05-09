@@ -1,0 +1,96 @@
+.n-main li:last-child span{
+	display: block;
+}
+.n-main li:last-child a{
+	color:#1c78c5;
+}
+.n-main:hover li:last-child span{
+	display: none;
+}
+.n-main:hover li:last-child a{
+	color:#333;
+}
+.n-main:hover li:last-child:hover span{
+	display: block;
+}
+.n-main:hover li:last-child:hover a{
+	color:#1c78c5;
+}
+.main{
+	width:1190px;
+	height: 1456px;
+    margin: 15px auto 0 auto;
+}
+.m-local{
+	width: 1190px;
+	font-size: 14px;
+    padding: 0 0 15px 0;
+    color: #666;
+}
+.m-local a,.m-local a:hover{
+	padding: 0 5px;
+    color: #126db3;
+}
+.m-local img{
+	position: relative;
+    top: -1px;
+}
+.main .bt{
+	background: #e7f5ff;
+    height: 40px;
+    line-height: 40px;
+}
+.main .bt span{
+    background: #1c78c5;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 20px;
+}
+.m-zhan-list{
+	margin: 20px auto;
+}
+.m-zhan-list ul>li{
+	float: left;
+    width: 279px;
+    margin: 5px 9px 12px 9px;
+}
+.m-zhan-list li img{
+	width: 100%;
+    height: 186px;
+}
+.m-zhan-list li b{
+	font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    display: block;
+    margin-top: 6px;
+    height: 24px;
+    overflow: hidden;
+}
+.m-zhan-list li b a{
+	color: #444;
+	text-decoration: none;
+}
+.m-zhan-list li p{
+	font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+.m-b-fenye{
+	font-size: 16px;
+    cursor: pointer;
+    margin: 16px 320px;
+    line-height: 30px;
+}
+.m-b-fenye li{
+	padding: 6px 11px;
+    border: #e0e0e0 1px solid;
+    border-radius: 4px;
+    margin-right: 5px;
+    float:left;
+}
+.m-b-fenye li:hover,.m-b-fenye li.hover{
+	background:#1c78c5;
+	color: #fff;
+}
