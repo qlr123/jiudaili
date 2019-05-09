@@ -1,0 +1,24 @@
+{
+  "name": "jiudaili",
+  "version": "1.0.0",
+  "description": "Git is a distributed version control system.\r Git is free software distributed under the GPL.\r Git has a mutable index called stage.\r Git tracks changes of files.\r My stupid boss still prefers SVN.\r do something \r b do something\r test dev\r test dev1\r aaaaa\r bbbb\r 123\r 5yue7-19:47",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qlr123/jiudaili.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qlr123/jiudaili/issues"
+  },
+  "homepage": "https://github.com/qlr123/jiudaili#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

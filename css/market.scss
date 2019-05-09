@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+}
+a:hover{
+    text-decoration: underline;
+    color:red;
+}
+ body>p{
+       width:1003px;
+       background:red;
+       line-height:38px;
+       padding-left:670px;     
+       margin:0 auto; 
+    }
+.content{
+    width:1003px;
+    height:1230px;
+    margin:0 auto;
+    display: flex;
+    margin-top:4px;
+   
+    //大图片and文字   11
+    .c-left{
+        width:742px;
+        height:1200px;
+        .img-t1{
+            display: flex;       
+            img{
+                width:308px;
+                height:268px;
+                margin:0 14px;
+            }
+            .hotspot{
+                width:400px;
+                height:270px;
+                h4{
+                    text-align:center;
+                    margin:20px 0 10px 0;
+                    color:red;
+                   
+                }
+                >a{
+                    margin-left:20px;
+                    font-size:14px;
+                }
+                p{
+                  font-size:12px;  
+                }
+            }
+        }    
+       .box-it{
+            display: flex; 
+            margin-top:10px;      
+            .box1{
+                height:260px; 
+                width:360px;
+                margin-top:4px;
+                border:1px solid #9cd2fe;
+                .market{           
+                    height:130px;           
+                    >p{
+                        line-height:30px;
+                        background:#2478d0;
+                        font-size:14px;
+                        color:white;
+                        a{
+                            display: inline-block;
+                            margin-left:260px;
+                            font-size:12px;
+                            color:white;
+                        }
+                    }
+                    .img-t2{
+                        display: flex;
+                        border-bottom:1px dashed gainsboro;
+                        padding-bottom:8px;
+                        img{
+                            width:90px;
+                            height:70px;
+                            margin:10px 22px 0 22px;
+                        }
+                        .title{
+                            width:240px;
+                            height:70px;
+                            margin-top:10px;
+                            h5{                      
+                                font-size:12px;
+                            }
+                            p{                  
+                                font-size:12px;                       
+                            }
+                        }
+                    }
+                   
+                }
+                ul{
+                    height:152px;
+                    li{
+                        margin:4px 0 0 6px;
+                        font-size:12px;
+                    }
+                }
+            }
+            .box2{
+                margin-left:20px;
+            }     
+        }
+        img{
+            width:730px;
+            height:40px;
+            margin-left:6px;
+            margin-top:14px;
+         
+        }
+    }
+    .c-right{
+        background:blue;
+        width:260px;
+        height:1200px;
+        .r-list{
+            width:260px;
+            height:240px;
+            background:#eff6fa;
+            p{  
+                height:32px;
+                line-height:32px;
+                border:1px solid #c9dbef;
+                span{
+                    margin-left:8px;
+                    color:blueviolet;
+                 }
+                a{
+                     display: inline-block;
+                     margin-left:150px;
+                     font-size:12px;
+                 }
+            }          
+            ul{
+                margin-left:8px;
+                li{
+                    font-size:12px;
+                    margin:2px 0;
+                }
+            } 
+            .teshu li{
+                a:first-child{
+                   color:blueviolet;;
+                }
+            } 
+        }
+    }
+}

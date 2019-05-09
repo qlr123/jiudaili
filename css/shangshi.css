@@ -17,7 +17,7 @@ li{
 .content{
 	width:1000px;
 	margin:0 auto;
-	height:1380px;
+	height:1160px;
 }
 
 .liebiao{
@@ -96,7 +96,7 @@ li{
 
 .left .fenye{
 	width:685px;
-	height:1042px;
+	height:1020px;
 }
 .left .fenye li{
 	height:40px;
@@ -111,9 +111,8 @@ li{
 }
 .left table{
 	width:640px;
-	margin-top:10px;
+
 	background:gainsboro;
-	margin-left:26px;
 }
 .left table td{
 	display:inline-block;
@@ -129,11 +128,16 @@ li{
 	width:34px;
 	border:none;
 	height:20px;
+	float:left;
+	margin-top:4px;
+	margin-left:10px;
 }
 .left td button{
-	width:34px;
+	width:32px;
 	height:22px;
-margin-top:10px;
+float:left;
+	margin-top:4px;
+	margin-left:6px;
 	
 }
 .right{

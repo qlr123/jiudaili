@@ -5,7 +5,7 @@
 li{
 list-style: none;
 }
-a{
+body a{
 	color:black;
 	text-decoration: none;
 }
@@ -21,7 +21,7 @@ a:hover{
 }
 .title{
 	width:1003px;
-	height:3030px;
+	height:2850px;
 	margin:0 auto;
 
 }
@@ -75,12 +75,14 @@ a:hover{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 .nav11 li{
 	width:74px;
 	height:36px;
 	line-height: 36px;
 	border-right:1px solid greenyellow;	
+	text-align: center;
 }
 .nav11 .teshu1{
 	border-right:none;
@@ -91,7 +93,7 @@ a:hover{
 	margin:0 auto;
 	display: flex;
 	justify-content:space-around;
-	align-items: center;
+	background:pink;
 }
 
 .nav1 .nav1-1{
@@ -99,9 +101,10 @@ a:hover{
 	height:290px;
 }
 
-.nav1-1>a{
+.nav1-1 h4>a{
 	display: block;
 	margin-left:340px;
+	font-size:12px;
 }
 .nav1-1>h3{
 	width:408px;
@@ -117,7 +120,7 @@ a:hover{
 	font-size:12px;
 	text-align: center;
 	border-bottom:1px dashed #D3D3D3;
-	padding-bottom:6px;
+	padding-bottom:4px;
 }
 .nav1 .nav1-2{
 	width:256px;
@@ -130,7 +133,7 @@ a:hover{
 	display: block; 
 }
 .block p{
-	margin:2px 0;
+	margin:1px 0;
 }
 .nav1-2 .unblock{
 	display: none;
@@ -183,18 +186,17 @@ a:hover{
 }
 
 
-.jiunews .jiuright{
+.jiunews{
 	width:1000px;
-	height:30px;
-	padding-left:520px;
-	margin-top:26px;
-	
+	height:40px;
+	background:cornflowerblue;	
 }
-.jiunews .jiuright li{
-	width:68px;
-	font-size:12px;
-	float:left;	
-
+.jiunews p{
+	margin:0 0;
+	margin-left:420px;
+}
+.jiunews{
+	line-height:40px;
 }
 
 .smallnews-l{
@@ -265,7 +267,7 @@ a:hover{
 .smallnews-c h4{
 	width:344px;
 	text-align: center;
-	color:red;
+	/*color:red;*/
 	margin:14px 0;
 }
 .smallnews-c .jiacu a{
@@ -394,11 +396,6 @@ a:hover{
 
 
 
-
-
-
-
-
 .smallnews-l1{
 	width:306px;
 	float:left;
@@ -406,7 +403,7 @@ a:hover{
 .smallnews-l1 span{
 	margin-right:50px;
 }
-.smallnews-l1 a,.smallnews-r1 a{
+.smallnews-r1 a{
 	margin-left:2px;
 }
 .smallnews-l1 img{
@@ -455,6 +452,7 @@ a:hover{
 	height:36px;
 	width:262px;
 }
+
 .smallnews-r1 .jiacu span{
 	height:36px;
 	background:yellowgreen;
@@ -509,31 +507,42 @@ a:hover{
 }
 
 
-
-.con{
-	margin-top:20px;
-	width:1002px;
-	height:160px;
-	background:#f1f0f0;
-	border-top:2px solid black;
-
+/*招商分类*/
+.classify{
+	width:1000px;
+	height:150px;
+	display:flex;
+	align-items: center;
+	border-top:4px solid black;
+	margin-top:30px;
+	background:gainsboro;
 }
-.con li>h5{
-	display: inline-block;
-	border-bottom:2px solid white;
-	background:#e0e0e0;
-	height:25px;
-	line-height: 25px;
-	padding:0 10px;
-	margin-top:0px;
-	margin-bottom:0;
-}
-.con a{
+.classify a{
+	width:80px;
+	height:22px;
 	display:inline-block;
-	margin-left:8px;
-	font-size: 12px;
 }
-.weibu>.m-end1{
-	margin-bottom:100px;
-
+.classify .left{
+	width:100px;
+	height:148px;
+	background:darkgrey;
+	text-align: center;
+	
+}
+.classify .left li{
+	border-bottom:1px solid white;
+}
+.classify .right{
+	margin-left:10px;
+	height:148px;
+	width:900px;
+	
+}
+.classify ul{
+	margin:0 0;
+	
+}
+.classify li{
+	margin:2px 0;
+	height:22px;
 }

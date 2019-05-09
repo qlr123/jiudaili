@@ -1,0 +1,288 @@
+.footer{
+	width: 100%;
+	height: 330px;
+	background: #3f3e3e;
+    padding: 25px 0 40px 0;
+}
+.end{
+	width: 1190px;
+	height: 174px;
+	margin: 0 auto;
+	position: relative;
+}
+.end ul:first-child{
+	width:1190px;
+	height: 19px;
+	font-size: 14px;
+    margin-bottom: 12px;
+}
+.end ul:first-child li{
+	float: left;
+    padding-right: 12px;
+}
+.end ul:first-child a{
+	color: #f1f1f1;
+}
+.banquan{
+	font-size: 12px;
+    color: #cccaca;
+    margin-bottom: 16px;
+}
+.banquan a{
+	color: #cccaca;
+}
+.banquan p{
+	line-height: 20px;
+}
+.banben-tu li{
+	width: 120px;
+	float: left;
+	margin-right: 8px;
+}
+.banben-erweima{
+	position: absolute;
+    right: 0;
+    top: 10px;
+}
+.banben-erweima p{
+	color: #cccaca;
+	font-size: 14px;
+}
+.banben-erweima li{
+	float: left;
+    width: 130px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #cccaca;
+    text-align: center;
+    line-height: 30px;
+}
+.banben-erweima li img{
+	width: 100px;
+	height: 100px;
+	margin-left: 15px;
+}
+.m_end {
+	width: 100%;
+	height: 418px;
+	background: #f3f3f3;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.fu-he-zixun h3 {
+	font-size: 18px;
+	color: #ca0202;
+	text-shadow: 0px 0px 1px #fff;
+	margin-bottom: 12px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.fu-he-zixun {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.fu-wu {
+	width: 230px;
+	height: 357px;
+	float: left;
+}
+
+.fu-wu span {
+	margin: 15px 0 10px 0;
+}
+
+.zhaochanpin ,.fu-wu p{
+	background: #5b95f9;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 0;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.fu-wu p:first-of-type {
+	background: #00c4d4;
+	padding: 14px 0;
+}
+
+.fu-wu p:last-of-type {
+	background: #b16ef9;
+	padding: 14px 0;
+}
+
+.hezuo-zhongxin {
+    margin: 0 20px;
+	width: 462px;
+	height: 360px;
+	float: left;
+}
+.hezuo-zhongxin h3{
+	padding: 0 20px;
+}
+.hezuo-zhongxin ul{
+	width: 422px;
+	height: 320px;
+	border-left: #e3e3e3 1px solid;
+    border-right: #e3e3e3 1px solid;
+    padding: 0 19px;
+}
+.hezuo-zhongxin li {
+	font-size: 16px;
+    color: #444;
+    line-height: 38px;
+    text-align: left;
+	width: 402px;
+	height: 38px;
+	position: relative;
+	background: #fff;
+    margin-bottom:20px;
+    padding: 6px 10px;
+}
+
+.hezuo-zhongxin li img {
+	position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 101px;
+    height: 35px;
+}
+
+.zixun-zhongxin {
+	width: 230px;
+	height: 378px;
+	float: left;
+}
+
+.zixun-zhongxin h4 {
+	font-size: 14px;
+    color: #b30000;
+    line-height: 32px;
+	font-weight: normal;
+}
+
+.zixun-zhongxin p {
+	font-size: 14px;
+    color: #2f547a;
+}
+
+.zixun-zhongxin li {
+	padding-bottom: 10px;
+    border-bottom: #dcdbdb 1px solid;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: left;	
+}
+.zixun-zhongxin span{
+	font-size: 12px;
+    color: #555;
+    display: block;
+    line-height: 22px;
+}
+.zixun-zhongxin img {
+	position: absolute;
+    right: 0px;
+    top: 8px;
+    width: 35px;
+    height: 35px;
+}
+
+.end {
+	width: 100 0px;
+	
+	margin: auto;
+	position: relative;
+}
+
+.end .end1 {
+	width: 750px;
+	height: 1px;
+}
+
+.end li {
+	float: left;
+	width: 80px;
+	height: 50px;
+	margin-top: 20px;
+	line-height: 50px;
+}
+
+.end li a {
+	color: #fff;
+}
+
+.banquan {
+	margin-top: 80px;
+	width: 750px;
+	height: 110px;
+	font-size: 14px;
+	color: #cccaca;
+}
+
+.banquan p {
+	margin-top: 5px;
+}
+
+.banben-tu li {
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+}
+
+.banben-erweima {
+	position: absolute;
+	top: 45px;
+	right: 0;
+}
+
+.banben-erweima p {
+	color: #cccaca;
+}
+
+.banben-erweima li {
+	width: 160px;
+	height: 152px;
+	text-align: center;
+}
+.classify{
+	width:1000px;
+	height:150px;
+	display:flex;
+	align-items: center;
+	border-top:4px solid black;
+	margin-top:30px;
+	background:gainsboro;
+	margin:0 auto;
+}
+.classify a{
+	width:80px;
+	height:22px;
+	display:inline-block;
+}
+.classify .left{
+	width:100px;
+	height:148px;
+	background:darkgrey;
+	text-align: center;
+	
+}
+.classify .left li{
+	border-bottom:1px solid white;
+}
+.classify .right{
+	margin-left:10px;
+	height:148px;
+	width:900px;
+	
+}
+.classify ul{
+	margin:0 0;
+	
+}
+.classify li{
+	margin:2px 0;
+	height:22px;
+}
