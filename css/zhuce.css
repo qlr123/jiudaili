@@ -211,12 +211,19 @@ section {
 	border: 1px solid #f1f1f1;
 }
 
-.bl7 input:last-child {
+.bl7 input:nth-child(3) {
 	background: #da2729;
 	color: #fff;
 	border: 0;
 	margin-left: 10px;
 }
+.bl7 input:nth-child(4) {
+	display: none;
+	color: #f00;
+	border: 0;
+	margin-left: 10px;
+}
+
 .buchong{display: none;}
 .buchong input {
 	margin-left: 30px;
