@@ -188,7 +188,7 @@ footer {
 .xiang-qing li a:hover {
 	color: #d00;
 }
-
+/*
 .main .m_end {
 	width: 100%;
 	height: 400px;
@@ -310,7 +310,7 @@ footer {
 	position: absolute;
 	right: 2px;
 	top: 2px;
-}
+}*/
 .footer{padding: 0;}
 .end{width: 1000px;height: 260px;margin: auto;position: relative;overflow: hidden;}
 .end .end1{
