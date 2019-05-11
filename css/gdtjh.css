@@ -1,11 +1,20 @@
 .n-main li:nth-child(2) span{
 	display: block;
 }
+.n-main li:nth-child(2) a{
+	color:#1c78c5;
+}
 .n-main:hover li:nth-child(2) span{
 	display: none;
 }
+.n-main:hover li:nth-child(2) a{
+	color:#333;
+}
 .n-main:hover li:nth-child(2):hover span{
 	display: block;
+}
+.n-main:hover li:nth-child(2):hover a{
+	color:#1c78c5;
 }
 body a:hover{
 	text-decoration: none;
@@ -150,6 +159,9 @@ body a:hover{
 .m-b-list .xinxi b a{
 	color: #333;
 }
+.m-b-list .xinxi b:hover a{
+	color:#ba0000;
+}
 .m-b-list .xinxi p{
 	font-size: 14px;
     line-height: 22px;
@@ -171,6 +183,10 @@ body a:hover{
     border-radius: 4px;
     margin-right: 5px;
     float:left;
+}
+.m-b-fenye li:hover,.m-b-fenye li.hover{
+	background:#1c78c5;
+	color: #fff;
 }
 .m-b-right{
 	width:305px;

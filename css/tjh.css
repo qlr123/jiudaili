@@ -1,11 +1,20 @@
 .n-main li:first-child span{
 	display: block;
 }
+.n-main li:first-child a{
+	color:#1c78c5;
+}
 .n-main:hover li:first-child span{
 	display: none;
 }
+.n-main:hover li:first-child a{
+	color:#333;
+}
 .n-main:hover li:first-child:hover span{
 	display: block;
+}
+.n-main:hover li:first-child:hover a{
+	color:#1c78c5;
 }
 /*快速搜索*/
 .quickSearch{

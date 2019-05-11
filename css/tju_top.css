@@ -209,11 +209,11 @@
 	border-style: solid;
 	border-color: transparent transparent #1c78c5 transparent; 
 }
-.n-main li:hover a{
-	color:#333;
+.n-main li.hover a{
+	color:#1c78c5;
 	text-decoration: none;
 }
-.n-main li:hover span{
+.n-main li.hover span{
 	display: block;
 }
 .n-main li:nth-child(2) span,.n-main li:nth-child(3) span{
@@ -228,6 +228,7 @@
     background: #d03232;
     padding: 0 13px;
 }
-.meijiu a{
+.meijiu a,.meijiu a:hover{
 	color:#fff;
+	text-decoration: none;
 }

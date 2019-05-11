@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>美酒问答</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/move.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/jiu.css" />
+		<style type="text/css">
+			.main {
+				height: 360px;
+			}
+			
+			.main h3 {
+				height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+			}
+			
+			.main h3 a {
+				float: left;
+				width: 100px;
+				height: 30px;
+				background: linear-gradient(#fff, #efefef);
+				margin-right: 20px;
+				text-align: center;
+				border: 1px solid #ccc;
+				font-size: 12px;
+				border-bottom: 0;
+				border-radius: 5px 5px 0 0;
+			}
+			
+			.main h3 a:hover{
+				background: linear-gradient(#4a8cc6, #2a63a5);
+				color: #fff;
+			}
+			.main h3 .hover {
+				background: linear-gradient(#4a8cc6, #2a63a5);
+				color: #fff;
+			}
+			
+			.liebiao {
+				height: 80px;
+			}
+			
+			.liebiao .lie_up {
+				height: 30px;
+				border: solid 1px #eaeaea;
+				border-right: solid 1px #eaeaea;
+				border-top: solid 2px #2962a4;
+				;
+			}
+			
+			.liebiao .lie_up span {
+				line-height: 30px;
+			}
+			
+			.liebiao .lie_up .span1 {
+				margin-left: 20px;
+				margin-right: 30px;
+			}
+			
+			.liebiao .lie_up .span2 {
+				margin-left: 220px;
+				margin-right: 50px;
+			}
+			
+			.liebiao .lie_up .span3 {
+				margin-left: 240px;
+				margin-right: 50px;
+			}
+			
+			.liebiao ul li{
+				line-height: 50px;
+				padding-left: 28px;
+			}
+			.liebiao ul li a:nth-of-type(1){
+				margin-left: 54px;
+				margin-right: 232px;
+			}
+			.liebiao ul li a:nth-of-type(2){
+				margin-left: 60px;
+				margin-right: 5px;
+			}
+			.liebiao ul li a:nth-of-type(3){
+				margin-right: 5px;
+			}
+			.liebiao ul li a:nth-of-type(5){
+				margin-left: 140px;
+				color: #666;
+				margin-right: 65px;
+			}
+			.liebiao ul li a:nth-of-type(6){
+				color: #666;
+				margin-right: 50px;
+			}
+			.liebiao ul li a:last-child{
+				width: 80px;
+				height: 20px;
+				background: #909090;
+				float: right;
+				margin-top: 15px;
+				line-height: 20px;
+				text-align: center;
+				color: #fff;
+				font-size: 12px;
+				margin-right: 10px;
+			}
+			.liebiao ul li a:last-child:hover{
+				background: #2962a4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="top">
+				<div class="welcome">
+					<p>您好，欢迎来到美酒网！请
+						<a>登录</a>
+						<a>注册</a>
+					</p>
+					<div class="gf">
+						<a href="index.html">美酒招商网首页</a>
+						|
+						<a href="#">移动版</a>
+						|
+						<a href="#" class="weibo">官方微博</a>
+						|
+						<a href="#" class="weixin">官方微信</a>
+					</div>
+				</div>
+			</div>
+			<div class="toubu">
+				<div class="logo">
+					<a><img src="../img/logo1.jpg" /></a>
+				</div>
+				<ul>
+					<li>
+						<a>美酒招商网首页</a>
+					</li>
+					<li>
+						<a>美酒百科</a>
+					</li>
+					<li>
+						<a>加盟项目</a>
+					</li>
+					<li>
+						<a>黄金项目</a>
+					</li>
+				</ul>
+				<div class="search">
+					<div class="d1">
+						<input type="text" placeholder="请在此输入你的问题" />
+						<input type="button" value="搜 索" />
+					</div>
+					<input type="button" value="我要提问" class="tiwen" />
+				</div>
+			</div>
+		</header>
+		<nav>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="meijiuwenda.html" target="_self">问答首页</a>
+				</li>
+				<li>
+					<a href="meijiuwenda2.html" target="_self">待解决问题</a>
+				</li>
+				<li>
+					<a href="meijiuwenda3.html" target="_self">已解决的问题</a>
+				</li>
+				<li>
+					<a href="jifenbang.html">积分榜</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="gonggao">
+			<h3>美酒网公告：</h3>
+			<p>已解决问题：
+				<a>1880</a> &nbsp; &nbsp;&nbsp;待解决问题：
+				<a>999</a>
+			</p>
+			<div class="ation">
+				<ul>
+					<li>
+						<a>有问题么?我是轮播信息</a>
+					</li>
+					<li>
+						<a>bbbfahjkah</a>
+					</li>
+					<li>
+						<a>ccgfahgagagc</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<h3>
+				<a  href="jifenbang.html">本周高手排行</a>
+				<a  href="jifenbang1.html">本月高手排行</a>
+				<a class="hover" href="jifenbang2.html">总排行</a>
+			</h3>
+			<div class="liebiao">
+				<div class="lie_up">
+					<span class="span1">排名</span>
+					<span>用户</span>
+					<span class="span2">级别</span>
+					<span>擅长领域</span>
+					<span class="span3">回答数</span>
+					<span>上升积分</span>
+				</div>
+				<ul>
+					<li>1<a>hjt</a>八级<a>酒知识</a>
+						<a>酒资讯</a><a>项目选择</a>
+						<a>1000</a>
+						<a>5000</a>
+						<a>向TA求助</a>
+					</li>
+					<li>1<a>hjt</a>八级<a>酒知识</a>
+						<a>酒资讯</a><a>项目选择</a>
+						<a>1000</a>
+						<a>5000</a>
+						<a>向TA求助</a>
+					</li>
+					<li>1<a>hjt</a>八级<a>酒知识</a>
+						<a>酒资讯</a><a>项目选择</a>
+						<a>1000</a>
+						<a>5000</a>
+						<a>向TA求助</a>
+					</li><li>1<a>hjt</a>八级<a>酒知识</a>
+						<a>酒资讯</a><a>项目选择</a>
+						<a>1000</a>
+						<a>5000</a>
+						<a>向TA求助</a>
+					</li>
+					<li>1<a>hjt</a>八级<a>酒知识</a>
+						<a>酒资讯</a><a>项目选择</a>
+						<a>1000</a>
+						<a>5000</a>
+						<a>向TA求助</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<footer>
+			<ul>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>
+					<a href="#">意见投诉</a>
+				</li>
+				<li>
+					<a href="#">招贤纳士</a>
+				</li>
+				<li class="lastone">
+					<a href="#">联系我们</a>
+				</li>
+			</ul>
+			<p>版权所有 中国美酒招商网-WWW.9928.TV Copy Right 2010-2020</p>
+			<p class="police">备案：豫ICP备10209129号 增值电信业务经营许可证：豫B2-20160332
+				<a>豫公网安备41010502003153</a>
+			</p>
+			<p>免责声明：本网站只起到信息平台作用，不为交易经过负任何责任，请双方谨慎交易，以确保您的权益。</p>
+			<p>内容的真实性、准确性和合法性由发布个人或企业负责。如有信息、图片侵权，请及时联系我们处理。</p>
+			<div>
+				<a href="#"><img src="../img/end.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="../img/end2.jpg" /></a>
+			</div>
+		</footer>
+
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			var i = 0;
+			var m = 0;
+			var timer = setInterval(function() {
+				i++;
+				if(i == 1) {
+					$(".lunbo ul").stop().animate({
+						"left": "-220px"
+					}, 1000);
+					$(".nums span").removeClass("hovers")
+					$(".nums span").eq(i).addClass("hovers")
+					$(".lunbo p").eq(i).siblings("p").hide()
+					$(".lunbo p").eq(i).show()
+				} else {
+					i = 0;
+					$(".lunbo ul").stop().animate({
+						"left": 0
+					}, 1000);
+					$(".nums span").removeClass("hovers")
+					$(".nums span").eq(i).addClass("hovers")
+					$(".lunbo p").eq(i).siblings("p").hide()
+					$(".lunbo p").eq(i).show()
+				}
+			}, 2000)
+			$(".lunbo ul").mouseover(function() {
+				clearInterval(timer)
+			})
+			$(".nums span").eq(0).click(function() {
+				$(".nums span").removeClass("hovers")
+				$(".nums span").eq(0).addClass("hovers")
+				$(".lunbo ul").stop().animate({
+					"left": 0
+				}, 1000);
+				$(".lunbo p").eq(0).siblings("p").hide()
+				$(".lunbo p").eq(0).show()
+			})
+			$(".nums span").eq(1).click(function() {
+				$(".nums span").removeClass("hovers")
+				$(".nums span").eq(1).addClass("hovers")
+				$(".lunbo ul").stop().animate({
+					"left": "-220px"
+				}, 1000);
+				$(".lunbo p").eq(1).siblings("p").hide()
+				$(".lunbo p").eq(1).show()
+			})
+			var timerr = setInterval(function() {
+				m++;
+				$(".gonggao .ation ul").stop().animate({
+					"top": "-=30px"
+				}, 1000)
+				if(m == 3) {
+					$(".gonggao .ation ul").stop().animate({
+						"top": 0
+					}, 1000)
+					m = 0
+				}
+			}, 2000)
+		})
+	</script>
+
+</html>

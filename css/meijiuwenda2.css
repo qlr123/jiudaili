@@ -1,0 +1,130 @@
+.main{height: 1080px;}
+.main .left {height: 980px;}
+.main .right{
+	height: 730px;
+}
+.main .left .up{
+	background: #ebedf1;
+	height: 280px;
+}
+.main .left .up h3{
+	width: 680px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin: auto;
+	margin-top: 10px;
+	color: #666;
+}
+.main .left .up h3 a{
+	margin-left: 20px;
+	color: #333;
+}
+.main .left .up h3 a:hover{
+	color: #d00;
+}
+.main .left .up ul{
+	width: 700px;
+	height: 200px;
+	background: #fff;
+	margin-left: 30px;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+.main .left .up ul li{
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 40px;
+	float: left;
+}
+.main .left .up ul li a{
+	font-size: 12px;
+}
+ .left_middle{
+ 	width: 760px;
+ 	height: 660px;
+ 	margin-top: 20px;
+ }
+.left_middle h3{
+	line-height: 25px;
+    border-bottom: #86b9cc 2px solid;
+    padding-left: 10px;
+    font-size: 12px;
+    height: 25px;
+}
+.left_middle h3 a{
+	float: left;
+	width: 100px;
+	height: 23px;
+	line-height: 22px;
+	background: linear-gradient(#fff,#efefef);
+	text-align: center;
+	margin-right: 20px;
+	border-radius: 3px 3px 0 0;
+	font-weight: bold;
+}
+.left_middle h3 .a2{
+	background: #86b9cc;
+	color: #fff;
+}
+.left_middle h3 a:hover{
+	color: #d00;
+}
+.left_middle p{
+	width: 720px;
+	height: 40px;
+	border-bottom: 1px solid #dde5eb;
+	color: #999;
+	margin: auto;
+	line-height: 40px;
+}
+.left_middle p span{
+	margin-left: 345px;
+	margin-right: 40px;
+}
+.left_middle ul{
+	width: 720px;
+	margin: auto;
+}
+.left_middle ul li{
+	width: 720px;
+	height: 40px;
+	border-bottom: 1px solid #dde5eb;
+	color: #999;
+	line-height: 40px;
+}
+.left_middle ul li a:first-child{
+	color: #333;
+}
+.left_middle ul li a:hover{
+	color: #d00;
+}
+.left_middle ul li span{
+	margin: 0 30px 0 300px;
+}
+.main .mend{
+	margin: 0;
+}
+.main .mend .pagination li{
+	float: left;
+	margin-right: 20px;
+}
+.navigation{width: 720px;background: #f7f7f7;
+height: 60px;
+margin-left: 50px;padding: 13px 20px;}
+.main .mend .pagination li a{
+	font-size: 14px;
+	padding: 0 10px;
+	line-height: 32px;
+	text-align: center;
+}
+.main .mend .pagination ._search input{
+	float: left;
+	width: 40px;
+	height: 35px;
+	margin-right: 10px;
+}
+.main .mend .pagination{
+	margin: 0;
+}
