@@ -1,0 +1,83 @@
+﻿
+.jcarousel-skin-tango .jcarousel-container {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    padding: 15px 40px;
+    height: 140px;
+}
+
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  920px;
+    _width:916px;
+    height: 140px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal p{ line-height:26px;}
+.jcarousel-skin-tango .jcarousel-item {
+    width: 158px;
+    height: 140px;
+    text-align:center;
+}
+.jcarousel-skin-tango .jcarousel-item a img{
+    BORDER: #e2e3e3 1px solid;
+    DISPLAY: block;
+    BACKGROUND: #fff;
+    MARGIN: 0px auto;
+    PADDING: 3px;
+}
+
+.jcarousel-skin-tango .jcarousel-item p a{
+    font-size:12px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top:10px;
+    right: 5px;
+    width: 26px;
+    height: 146px;
+    cursor: pointer;
+    background: transparent url(../images/baike_16.gif) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top:10px;
+    left: 5px;
+    width: 26px;
+    height: 146px;
+    cursor: pointer;
+    background: transparent url(../images/baike_15.gif) no-repeat 0 0;
+}
