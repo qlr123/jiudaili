@@ -1,0 +1,69 @@
+﻿/**登录后的样式**/
+#sddm { z-index: 30; height:30px;}
+
+#sddm li { width:80px;float:right;background:url(../images/bk_09.gif) right no-repeat; text-align:right; position:relative; height:30px;}
+
+#sddm li a { color:#680000;display: block;margin-right: 10px;height: 15px;_height:14px;}
+#sddm li .uname{ overflow-x:hidden; height:30px;}
+
+#sddm li a:hover{ }
+
+#sddm div { position: absolute; visibility: hidden; background: #e6f4d0; border: 1px solid #70ab14; left:10px; top:25px;}
+
+#sddm div a { position:relative; margin-right:0px; display:block; padding: 0px 7px 5px 7px; white-space:nowrap; text-align:left; text-decoration:none;background:#e6f4d0;color:#125908; font-size:12px; height:20px;}
+
+#sddm div a:hover {	background: #70ab14; color: #FFF}
+
+
+/**登录**/
+.bk_top_dh{ width:100%; height:30px; line-height:30px; background:url(../images/bktopbg.jpg) repeat-x;}
+.bk_top_dhxq{ margin:0 auto;width:1000px;}
+.bk_top_dhxq .yul{float:right; width:210px;font-size:12px;}
+.bk_top_dhxq .yul li { float:left; font-size:12px;}
+.bk_top_dhxq .yul li a{ color:#666;}
+.bk_top_dhxq span{float:right; width:80px;}
+.bk_top_dhxq .yul .ya1{display: block;float:left;margin-left:10px;_margin-left:9px; display:inline;}
+.bk_top_dhxq .yul .ya2{display: block; margin-left:10px;}
+.bk_top_dhxq .yul .ya { float:left; display:block;}
+
+
+.loginDiv{ width:85px; *width:80px; font-size:12px; height:30px; float:right; text-align:right;}
+.loginDiv a{font-size:12px; color:#011444;}
+.login{margin: 0 auto;width: 488px;border: 1px solid #B1B3B4; background:#fff;}
+.login .header{height: 60px;border-bottom: 1px solid #E2E2E2;position: relative;font-family: "微软雅黑";}
+.login .header .logo {position: absolute;width: 200px;height: 60px;}
+.login .header .close{ width:47px;height:20px;float:right;background:url(../images/icon_2.png) no-repeat -221px -126px;outline: none;*hide-focus: expression(this.hideFocus=true);}
+.login .header .close:hover{background-position:-221px -151px;}
+.login .login_form{width:272px;margin:0 auto; padding-bottom:30px; padding-top:30px;}
+.login .login_form .inputOuter{ position:relative;width:272px;height:42px; background:url(../images/icon_2.png) no-repeat -1px -1px; margin:10px;}
+.login .login_form .inputOuter .input_tips{position: absolute;top:13px;+top:15px;left:13px;font-size:14px;line-height:16px; color:#aaaaaa;cursor: text;}
+.login .login_form .inputOuter .inputstyle{width:258px; position: relative;top:2px;left:2px;  height:18px; padding:11px 0 11px 10px;line-height:18px; border:none;background:none; color: #333333;font-family:Verdana,Tahoma,Arial;font-size: 16px; ime-mode:disabled;}
+
+.login .login_form .submit{position: relative;height:40px;}
+.login .login_form .login_button{outline: none;*hide-focus: expression(this.hideFocus=true);}
+.login .login_form .login_button .btn{width:115px;height:35px;line-height:35px;border:none;font-size:18px; font-weight:bold; color: #fff; cursor: pointer; background:url(../images/icon_2.png) no-repeat 0 -90px;}
+.login .login_form .login_button:hover .btn{background-position:-116px -90px;}
+.login .login_form .login_button:hover{text-decoration:none;}
+
+.login .bottom{height:16px;margin-bottom:8px;bottom:0;text-align:right;font-size:12px; padding-right:10px;}
+.login .bottom .link{color: blue;}
+.login .bottom .dotted{color: #bfbfbf;margin:0px 5px;} 
+
+
+/******************百科底部样式******************/
+.bk_bottom{width:100%; margin-top:10px; font-size:12px;}
+.bk_btm_dh{width:100%; height:24px; line-height:24px; color:#666; background:#f1f1f1; text-align:center;}
+.bk_btm_dh a{padding:0 5px; color:#666;}
+.bk_btm_cont{width:1000px; margin:10px auto 20px auto; line-height:24px; text-align:center; color:#666;}
+
+
+/***返回顶部***/
+.backToTop {display: none;width: 18px;line-height: 1.2;padding: 5px 0;background-color: #666;color: #fff;font-size: 12px;text-align: center;position: fixed;_position: absolute;right: 10px;bottom: 100px;_bottom: "auto";cursor: pointer;opacity: .6;filter: Alpha(opacity=60)}
+.cha{-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px}
+
+/******************列表翻页样式******************/
+.paginator { width:720px;font:11px Arial, Helvetica, sans-serif;padding:10px; margin:10px 0; color:#026acb;text-align:center; font-size:14px;}
+.paginator a {padding: 10px 15px; border: solid 1px #ddd; background: #fff; text-decoration: none;}
+.paginator a:visited {padding: 10px 15px; border: solid 1px #ddd; background: #fff; text-decoration: none;}
+.paginator .cpb {padding: 1px 6px;font-weight: bold; font-size:14px;border:none}
+.paginator a:hover {color:#fff; background:#026acb;border-color:#026acb;text-decoration: none;}

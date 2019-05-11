@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html >
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			美酒百科|酒类百科知识:白酒,啤酒,保健酒,葡萄酒,洋酒,黄果米酒特色酒百科_中国美酒招商网【9928.TV】
+		</title>
+		<link href="../css/baike_css.css" rel="stylesheet" type="text/css" />
+		<link href="../css/logined.css" rel="stylesheet" type="text/css" />
+		<link href="../css/scrollpic.css" rel="stylesheet" type="text/css" />
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/move.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<form name="form1" method="post" action="index.aspx" id="form1">
+			<div class="bk_top_dh">
+				<div class="bk_top_dhxq">
+					<span id="loginDiv"><a href="#">登录</a></span>
+					<ul class="yul">
+						<li>
+							<a href="index.html" target="_blank" class="ya">美酒网首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" onclick="SetHome(this,'http://baike.9928.tv')" class="ya1">设为主页</a>
+						</li>
+						<li>
+							<a class="ya2" href="javascript:void(0)" onclick="AddFavorite('http://baike.9928.tv','美酒百科')">加入收藏</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="login" style="display:none;">
+				<div class="login">
+					<div id="header" class="header">
+						<div class="logo"></div>
+						<a id="close" class="close" href="javascript:CloseLogin()" title="关闭"></a>
+					</div>
+					<div class="login_form">
+						<span id="login_msg" style="color:Red;"></span>
+						<div class="inputOuter">
+							<label class="input_tips" id="uin_tips" for="u" style="display: block; ">帐号</label>
+							<input type="text" class="inputstyle" id="loginName" name="u" value="" tabindex="1" onkeyup="inputText(this)">
+						</div>
+						<div class="inputOuter">
+							<label class="input_tips" id="pwd_tips" for="u" style="display: block; ">密码</label>
+							<input type="password" class="inputstyle password" id="loginPwd" name="p" value="" maxlength="16" tabindex="2" onkeyup="inputText(this)">
+						</div>
+						<div class="submit">
+							<a class="login_button" href="javascript:void(0);">
+								<input type="submit" tabindex="6" value="登 录" class="btn" id="login_button" onclick="Login(this)">
+							</a>
+							<img src="../picture/qqkf.jpg" alt="QQ登录" id="qqLogin" onclick="QQLogin()" style="cursor:pointer;">
+						</div>
+					</div>
+					<div class="bottom">
+						<a href="http://www.9928.tv/userbox/join.html" class="link" target="_blank">注册新帐号</a>
+					</div>
+				</div>
+			</div>
+			<div id="userlogined" style="display:none;">
+				<ul id="sddm">
+					<li>
+						<a href="#" id="auname" onmouseover="mopen('m1')" onmouseout="mclosetime()" class="uname">八千流_喵</a>
+						<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+							<a href="#">我的词条</a>
+							<a href="#">创建词条</a>
+							<a href="#">百科首页</a>
+							<a href="#">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="bk_top_center">
+				<div class="bk_top_dhxq">
+					<div class="bk_logo">
+						<img src="../picture/logo.jpg" />
+					</div>
+					<div class="bk_search">
+						<input name="key" onkeydown="OnkeyDownSearch()" id="key" type="text" class="bk_input" value="" />
+						<img src="../picture/shbt.jpg" alt="搜索" onclick="search()" style="cursor:pointer;" />
+						<h3>热搜：<a onclick="searchHot('酒')"  target="_blank">酒</a><a onclick="searchHot('茅台')" target="_blank">茅台</a><a onclick="searchHot('葡萄酒')" target="_blank">葡萄酒</a><a onclick="searchHot('啤酒')" target="_blank">啤酒</a><a onclick="searchHot('红酒')" target="_blank">红酒</a></h3>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="bk_menu">
+					<ul class="u_l">
+						<li class="oli">
+							<a href="#" class="navbiao li_a">百科首页</a>
+						</li>
+						<li class="oli">
+							<a href='#' class="li_a">名酒百科</a>
+						</li>
+						<li class="oli" >
+							<a href=# class="li_a">酒知识</a>
+						</li>
+						<li>
+							<a href='#' class="li_a">酒企百科</a>
+						</li>
+						<li class="oli">
+							<a href="#" target="_blank" class="li_a">热词</a>
+						</li>
+						<li class="oli">
+							<a href="meijiuwenda.html" target="_blank" class="li_a">美酒问答</a>
+						</li>
+						<li><img src="../picture/menu07.jpg" alt="" /></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+
+			<div class="baike_css">
+				<div class="baike_css22">
+					<div class="baike_css21">
+						<div class="baike_css23">
+							<h3>精彩词条</h3>
+							<div class="baike_css24">
+								<a href="" id="currLink" target="_blank">
+									<img src="../picture/loading.jpg" id="tempImg" width="16" height="16" style=" display:none;" />
+									<img src="../picture/2016012515435208.jpg" id="currImg" width="188" height="125" />
+								</a>
+							</div>
+							<div class="baike_css25" id="currContent">
+								<h4>
+									<a href="/baike/6373.html" target="_blank">美酒成都堪送老，当垆仍...</a>
+								</h4>
+								<p style="font-size: 12px;">在漫漫的历史长河中，滴酒不沾的男女有，但飘散着中国酒香的爱情亦不在少数，有些甚至浪漫得必须被写进《史记》中。
+									<a>阅读全文>></a>
+								</p>
+							</div>
+							<div class="baike_css40 currData">
+
+								<a href='/baike/6373.html' target="_blank" class="currA" data='6373'><img src='../picture/2016012515435208.jpg' alt='美酒成都堪送老，当垆仍是卓文君' title='美酒成都堪送老，当垆仍是卓文君' width="57" height="43" border="0" /></a>
+								<div style="display:none;" class='ycon6373'>
+									<h4><a href='/baike/6373.html' target="_blank">美酒成都堪送老，当垆仍...</a></h4> 在漫漫的历史长河中，滴酒不沾的男女有，但飘散着中国酒香的爱情亦不在少数，有些甚至浪漫得必须被写进《史记》中。
+									<a href='/baike/6373.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+
+								<a href='/baike/6278.html' target="_blank" class="currA" data='6278'><img src='../picture/2014122215314982.jpg' alt='酒中五味，你品尝出来了吗？' title='酒中五味，你品尝出来了吗？' width="57" height="43" border="0" /></a>
+								<div style="display:none;" class='ycon6278'>
+									<h4><a href='/baike/6278.html' target="_blank">酒中五味，你品尝出来了...</a></h4> 酸、甜、苦、辣、涩，构成了白酒的人生五味，一瓶白酒主要是由这五种不同味道协调面成的，这些不同的味道，有着各自对应物质。酸味：是白酒的重要品味物质。白酒的酸类以...
+									<a href='/baike/6278.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+
+								<a href='/baike/6268.html' target="_blank" class="currA" data='6268'><img src='../picture/2014121516141496.jpg' alt='圣诞鸡尾酒，你学会调了吗？' title='圣诞鸡尾酒，你学会调了吗？' width="57" height="43" border="0" /></a>
+								<div style="display:none;" class='ycon6268'>
+									<h4><a href='/baike/6268.html' target="_blank">圣诞鸡尾酒，你学会调了...</a></h4> 圣诞节快要到了，下面介绍几款鸡尾酒品尝起来分别有温暖的香料、甜橙、蜂蜜、橡木和各种欢快的味道，加上酒精，会让今年圣诞更有气氛哦。
+									<a href='/baike/6268.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+
+								<a href='/baike/6257.html' target="_blank" class="currA" data='6257'><img src='../picture/2014120310095419.jpg' alt='女性每天到底要喝多少红酒最好？' title='女性每天到底要喝多少红酒最好？' width="57" height="43" border="0" /></a>
+								<div style="display:none;" class='ycon6257'>
+									<h4><a href='/baike/6257.html' target="_blank">女性每天到底要喝多少红...</a></h4> 喝多少红葡萄酒才能养颜护肤?那些葡萄酒功效最好?一起来看看吧!红葡萄酒含有很多抗氧化物质。这些抗氧化物质有重建破损DNA、修复细胞的功能。
+									<a href='/baike/6257.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+
+								<a href='/baike/6225.html' target="_blank" class="currA" data='6225'><img src='../picture/2014103114262125.jpg' alt='粉红杀手啤酒 pink killer' title='粉红杀手啤酒 pink killer' width="57" height="43" border="0" /></a>
+								<div style="display:none;" class='ycon6225'>
+									<h4><a href='/baike/6225.html' target="_blank">粉红杀手啤酒 pink kil...</a></h4> Pink Killer（粉红杀手啤酒​）的原料中除了麦芽、水、酵母等必不可少的部分，还加入了柚子汁、糖等添加物，通过上发酵酿造出带有水果味道的啤酒。
+									<a href='/baike/6225.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+
+								<a href='/baike/6223.html' target="_blank" class="currA" data='6223'><img src='../picture/2014102917493748.jpg' alt='黄酒为什么是黄色的？' title='黄酒为什么是黄色的？' width="57" height="43" border="0" /></a>
+								<div style="display:none;" class='ycon6223'>
+									<h4><a href='/baike/6223.html' target="_blank">黄酒为什么是黄色的？</a></h4> 黄酒顾名思义因为颜色是黄色所以得此称谓，与白酒清澈透明不同，黄酒颜色多褐色、黄色、棕色等，对于黄酒颜色的成因，有很多朋友比较好奇，在这里我们与白酒做一个比较，...
+									<a href='/baike/6223.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+
+								<div style=" clear:both;"></div>
+							</div>
+							<div style=" clear:both;"></div>
+						</div>
+						<div class="baike_css26">
+							<h3>热门关注</h3>
+
+							<div class="baike_css27">
+								<div class="baike_css28">
+									<a href='/baike/5698.html' target="_blank">
+										<img src='../picture/2014051611324845.jpg' width="67" height="51" alt='阿德勒鹰牌啤酒' title='阿德勒鹰牌啤酒' />
+									</a>
+								</div>
+								<div class="baike_css29">
+									<h4><a href='/baike/5698.html' target="_blank">阿德勒鹰牌啤酒</a></h4> 骑兵军乐队的精彩演出使得当晚的发布会成了每...
+									<a href='/baike/5698.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+								<div style=" clear:both;"></div>
+							</div>
+
+							<div class="baike_css27">
+								<div class="baike_css28">
+									<a href='/baike/5316.html' target="_blank">
+										<img src='../picture/2014021314393301.jpg' width="67" height="51" alt='无名三料啤酒' title='无名三料啤酒' />
+									</a>
+								</div>
+								<div class="baike_css29">
+									<h4><a href='/baike/5316.html' target="_blank">无名三料啤酒</a></h4> 无名三料啤酒入杯后有很漂亮的气泡层，气泡细...
+									<a href='/baike/5316.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+								<div style=" clear:both;"></div>
+							</div>
+
+							<div class="baike_css27">
+								<div class="baike_css28">
+									<a href='/baike/5209.html' target="_blank">
+										<img src='../picture/2014011014261454.jpg' width="67" height="51" alt='金庸笔下的饮酒人物代表' title='金庸笔下的饮酒人物代表' />
+									</a>
+								</div>
+								<div class="baike_css29">
+									<h4><a href='/baike/5209.html' target="_blank">金庸笔下的饮酒人物代表...</a></h4> 金庸笔下的饮酒人物代表如下：乔峰 乔爷酒量...
+									<a href='/baike/5209.html' target="_blank">阅读全文&gt;&gt;</a>
+								</div>
+								<div style=" clear:both;"></div>
+							</div>
+
+							<div style=" clear:both;"></div>
+						</div>
+						<div style=" clear:both;"></div>
+					</div>
+					<div class="baike_css30">
+						<div class="baike_css38" id="ad1">
+
+						</div>
+						<div class="baike_css37">
+
+							<div class="baike_css31 y_mo">
+								<h3><span><a href='/baike/list/bm_mingjiu.html' target="_blank">更多&gt;&gt;</a></span>名酒百科</h3>
+								<div class="baike_css32">
+									<div class="baike_css35">
+										<div class='baike_css33'>
+											<a href='/baike/7890.html' target='_blank'><img src='../picture/2017101711055910.jpg' width='94' height='69' alt='法国xsn十字架红酒' title='法国xsn十字架红酒' /></a>
+										</div>
+										<div class='baike_css34'>
+											<h4><a href='/baike/7890.html' target='_blank'>法国xsn十字架红酒</a></h4>&nbsp;&nbsp;&nbsp;&nbsp;法国xsn十字架红酒香味优雅，口味细腻，广受消费者喜欢。法国xsn十字架红酒正在火热招商，欢迎...
+											<a href='/baike/7890.html' target='_blank'>阅读全文>></a>
+											<div style='clear:both;'></div>
+										</div>
+										<div style='clear:both;'></div>
+									</div>
+									<ul>
+										<li><span>[<a href='/baike/list/15.html' target='_blank'>白酒</a>]</span>
+											<a href='/baike/7889.html' target='_blank'>小神女酒</a>
+										</li>
+										<li><span>[<a href='/baike/list/18.html' target='_blank'>葡萄酒</a>]</span>
+											<a href='/baike/7887.html' target='_blank'>葡萄酒“加糖”是什么意思?</a>
+										</li>
+										<li><span>[<a href='/baike/list/18.html' target='_blank'>葡萄酒</a>]</span>
+											<a href='/baike/7885.html' target='_blank'>女人喝红酒，应该怎么挑?</a>
+										</li>
+										<li><span>[<a href='/baike/list/15.html' target='_blank'>白酒</a>]</span>
+											<a href='/baike/7881.html' target='_blank'>建国后茅台酒度数发展史</a>
+										</li>
+										<li><span>[<a href='/baike/list/18.html' target='_blank'>葡萄酒</a>]</span>
+											<a href='/baike/7879.html' target='_blank'>波尔多甜白究竟有多甜?</a>
+										</li>
+										<li><span>[<a href='/baike/list/18.html' target='_blank'>葡萄酒</a>]</span>
+											<a href='/baike/7878.html' target='_blank'>葡萄酒发烧友的八个信号</a>
+										</li>
+										<li><span>[<a href='/baike/list/18.html' target='_blank'>葡萄酒</a>]</span>
+											<a href='/baike/7876.html' target='_blank'>红酒瓶的尺寸</a>
+										</li>
+										<li><span>[<a href='/baike/list/15.html' target='_blank'>白酒</a>]</span>
+											<a href='/baike/7875.html' target='_blank'>喝茅台酒为什么习惯用小杯？</a>
+										</li>
+									</ul>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							<div class="baike_css31 y_mo">
+								<h3><span><a href='/baike/list/bm_zhishi.html' target="_blank">更多&gt;&gt;</a></span>酒知识</h3>
+								<div class="baike_css32">
+									<div class="baike_css35">
+										<div class='baike_css33'>
+											<a href='/baike/7886.html' target='_blank'><img src='../picture/2017050810143011.jpg' width='94' height='69' alt='甜白为什么是甜的?' title='甜白为什么是甜的?' /></a>
+										</div>
+										<div class='baike_css34'>
+											<h4><a href='/baike/7886.html' target='_blank'>甜白为什么是甜的?</a></h4>&nbsp;&nbsp;&nbsp;&nbsp;在发酵的时候，葡萄中的天然糖分会在酵母的作用下转化成酒精。如果酿酒师在发酵还没完成之前人...
+											<a href='/baike/7886.html' target='_blank'>阅读全文>></a>
+											<div style='clear:both;'></div>
+										</div>
+										<div style='clear:both;'></div>
+									</div>
+									<ul>
+										<li><span>[<a href='/baike/list/30.html' target='_blank'>酒知识</a>]</span>
+											<a href='/baike/7883.html' target='_blank'>如何除去酒瓶口上的蜡封?</a>
+										</li>
+										<li><span>[<a href='/baike/list/30.html' target='_blank'>酒知识</a>]</span>
+											<a href='/baike/7880.html' target='_blank'>喝酒和上火到底有没有关系</a>
+										</li>
+										<li><span>[<a href='/baike/list/21.html' target='_blank'>历史</a>]</span>
+											<a href='/baike/7877.html' target='_blank'>“以茶代酒”一个凄惨的历史故事!</a>
+										</li>
+										<li><span>[<a href='/baike/list/30.html' target='_blank'>酒知识</a>]</span>
+											<a href='/baike/7874.html' target='_blank'>如何倒香槟和其他类型起泡酒</a>
+										</li>
+										<li><span>[<a href='/baike/list/30.html' target='_blank'>酒知识</a>]</span>
+											<a href='/baike/7873.html' target='_blank'>给贵客倒酒，人家为啥要敲桌子?</a>
+										</li>
+										<li><span>[<a href='/baike/list/30.html' target='_blank'>酒知识</a>]</span>
+											<a href='/baike/7872.html' target='_blank'>倒酒如何做到滴酒不漏</a>
+										</li>
+										<li><span>[<a href='/baike/list/30.html' target='_blank'>酒知识</a>]</span>
+											<a href='/baike/7869.html' target='_blank'>为什么喝酒后会口渴?</a>
+										</li>
+										<li><span>[<a href='/baike/list/30.html' target='_blank'>酒知识</a>]</span>
+											<a href='/baike/7867.html' target='_blank'>以酒谏酒</a>
+										</li>
+									</ul>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							<div class="baike_css31 y_mo">
+								<h3><span><a href='/baike/list/bm_renwu.html' target="_blank">更多&gt;&gt;</a></span>酒企百科</h3>
+								<div class="baike_css32">
+									<div class="baike_css35">
+										<div class='baike_css33'>
+											<a href='/baike/7888.html' target='_blank'><img src='../picture/2017051018503494.jpg' width='94' height='69' alt='波尔多右岸波美侯产区介绍' title='波尔多右岸波美侯产区介绍' /></a>
+										</div>
+										<div class='baike_css34'>
+											<h4><a href='/baike/7888.html' target='_blank'>波尔多右岸波美侯产区介绍</a></h4>&nbsp;&nbsp;&nbsp;&nbsp;右岸知名的葡萄酒产区：波美侯(又译为宝物隆)。尽管从我国葡萄酒爱好者的心目中，圣爱美隆更为...
+											<a href='/baike/7888.html' target='_blank'>阅读全文>></a>
+											<div style='clear:both;'></div>
+										</div>
+										<div style='clear:both;'></div>
+									</div>
+									<ul>
+										<li><span>[<a href='/baike/list/26.html' target='_blank'>企业百科</a>]</span>
+											<a href='/baike/7884.html' target='_blank'>格拉夫产区相关知识</a>
+										</li>
+										<li><span>[<a href='/baike/list/26.html' target='_blank'>企业百科</a>]</span>
+											<a href='/baike/7882.html' target='_blank'>法国波尔多梅多克梅尔酒庄介绍</a>
+										</li>
+										<li><span>[<a href='/baike/list/26.html' target='_blank'>企业百科</a>]</span>
+											<a href='/baike/7408.html' target='_blank'>你应该知道的薄若莱</a>
+										</li>
+										<li><span>[<a href='/baike/list/26.html' target='_blank'>企业百科</a>]</span>
+											<a href='/baike/7400.html' target='_blank'>历史悠久的武戈伯爵酒庄</a>
+										</li>
+										<li><span>[<a href='/baike/list/26.html' target='_blank'>企业百科</a>]</span>
+											<a href='/baike/7165.html' target='_blank'>中菲酒庄介绍</a>
+										</li>
+										<li><span>[<a href='/baike/list/26.html' target='_blank'>企业百科</a>]</span>
+											<a href='/baike/7151.html' target='_blank'>卡萨布兰卡谷智利白葡萄酒代名词</a>
+										</li>
+										<li><span>[<a href='/baike/list/26.html' target='_blank'>企业百科</a>]</span>
+											<a href='/baike/7002.html' target='_blank'>活灵魂酒庄简介</a>
+										</li>
+										<li><span>[<a href='/baike/list/24.html' target='_blank'>酒企名人</a>]</span>
+											<a href='/baike/6970.html' target='_blank'>“茅台酒”蜚声中外的推手</a>
+										</li>
+									</ul>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							<div class="baike_css31">
+								<h3>
+                            <span><a href="http://wenda.9928.tv">更多&gt;&gt;</a></span> 美酒问答
+                        </h3>
+								<div class="baike_css32" style="padding: 4px 10px;">
+									<ul>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s49_p1.html" target="_blank">市场营销</a>]</span>
+											<a href='http://wenda.9928.tv/huida/52294.html' target="_blank">江小白多少钱一瓶？</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s58_p1.html" target="_blank">糖酒会</a>]</span>
+											<a href='http://wenda.9928.tv/huida/52335.html' target="_blank">2018年糖酒会那里有举办的</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s58_p1.html" target="_blank">糖酒会</a>]</span>
+											<a href='http://wenda.9928.tv/huida/52282.html' target="_blank">2018成都春季糖酒会什么时间开始？</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s57_p1.html" target="_blank">酒知识</a>]</span>
+											<a href='http://wenda.9928.tv/huida/3404.html' target="_blank">猕猴桃可以做成酒不？</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s58_p1.html" target="_blank">糖酒会</a>]</span>
+											<a href='http://wenda.9928.tv/huida/51037.html' target="_blank">2017成都春季糖酒会什么时候开始？</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s58_p1.html" target="_blank">糖酒会</a>]</span>
+											<a href='http://wenda.9928.tv/huida/51038.html' target="_blank">2017全国春季糖酒会有哪些企业参加了...</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s41_p1.html" target="_blank">项目选择</a>]</span>
+											<a href='http://wenda.9928.tv/huida/50867.html' target="_blank">白水杜康代理</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s57_p1.html" target="_blank">酒知识</a>]</span>
+											<a href='http://wenda.9928.tv/huida/50875.html' target="_blank">买哪里的西洋参好，用来泡酒喝</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s57_p1.html" target="_blank">酒知识</a>]</span>
+											<a href='http://wenda.9928.tv/huida/50874.html' target="_blank">泡酒用什么中药材好？哪里卖的好?</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s57_p1.html" target="_blank">酒知识</a>]</span>
+											<a href='http://wenda.9928.tv/huida/50873.html' target="_blank">天麻能不能泡酒？</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s57_p1.html" target="_blank">酒知识</a>]</span>
+											<a href='http://wenda.9928.tv/huida/50871.html' target="_blank">枸杞泡酒的功效和作用</a>
+										</li>
+
+										<li><span>[<a href="http://wenda.9928.tv/list/s44_p1.html" target="_blank">代理筹备</a>]</span>
+											<a href='http://wenda.9928.tv/huida/50825.html' target="_blank">红酒代理怎么样？</a>
+										</li>
+
+									</ul>
+									<div style="clear: both;">
+									</div>
+								</div>
+							</div>
+							<div style="clear: both;">
+							</div>
+						</div>
+						<div class="baike_css38" id="ad5" style="margin: 0px;">
+
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+					<div style="clear: both;">
+					</div>
+				</div>
+				<div class="baike_css15">
+
+					<div class="baike_css16">
+						<h3>热门词条榜</h3>
+						<div class="baike_css17">
+
+						</div>
+						<div style=" clear:both;"></div>
+					</div>
+					<div class="baike_css16">
+
+						<h3><span><a href="/baike/list/bm_mingjiu.html" target="_blank">更多名酒&gt;&gt;</a></span>名酒全知道</h3>
+						<div class="baike_css18">
+							<ul>
+
+								<li>·
+									<a href='/baike/7890.html' target="_blank">法国xsn十字架</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7889.html' target="_blank">小神女酒</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7887.html' target="_blank">葡萄酒“加糖”</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7885.html' target="_blank">女人喝红酒，应</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7881.html' target="_blank">建国后茅台酒度</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7879.html' target="_blank">波尔多甜白究竟</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7878.html' target="_blank">葡萄酒发烧友的</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7876.html' target="_blank">红酒瓶的尺寸</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7875.html' target="_blank">喝茅台酒为什么</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7871.html' target="_blank">低卡路里起泡酒</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7870.html' target="_blank">低卡路里红白葡</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7868.html' target="_blank">寻找适合自己的</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7864.html' target="_blank">葡萄酒存放常见</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7863.html' target="_blank">老酒与年轻葡萄</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7862.html' target="_blank">橙酒的发展新趋</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7861.html' target="_blank">什么是橙酒?</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7860.html' target="_blank">葡萄酒与奶酪为</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7856.html' target="_blank">酱酒名字的由来</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7854.html' target="_blank">酱瓶茅台酒的种</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7852.html' target="_blank">白酒古时为何又</a>
+								</li>
+
+							</ul>
+							<div style=" clear:both;"></div>
+						</div>
+						<div style=" clear:both;"></div>
+
+					</div>
+					<div class="baike_css19" id="ad2">
+
+					</div>
+					<div class="baike_css19" id="ad3">
+
+					</div>
+					<div class="baike_css16">
+
+						<h3><span><a href="/baike/list/bm_renwu.html" target="_blank">更多&gt;&gt;</a></span>酒企·人物全知道</h3>
+						<div class="baike_css20">
+							<ul>
+
+								<li>·
+									<a href='/baike/7888.html' target="_blank">波尔多右岸波美侯产区介绍</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7884.html' target="_blank">格拉夫产区相关知识</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7882.html' target="_blank">法国波尔多梅多克梅尔酒庄介绍</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7408.html' target="_blank">你应该知道的薄若莱</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7400.html' target="_blank">历史悠久的武戈伯爵酒庄</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7165.html' target="_blank">中菲酒庄介绍</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7151.html' target="_blank">卡萨布兰卡谷智利白葡萄酒代名词</a>
+								</li>
+
+								<li>·
+									<a href='/baike/7002.html' target="_blank">活灵魂酒庄简介</a>
+								</li>
+
+								<li>·
+									<a href='/baike/6970.html' target="_blank">“茅台酒”蜚声中外的推手</a>
+								</li>
+
+								<li>·
+									<a href='/baike/6798.html' target="_blank">波尔多车库酒庄详解</a>
+								</li>
+
+							</ul>
+							<div style=" clear:both;"></div>
+						</div>
+						<div style=" clear:both;"></div>
+					</div>
+
+					<div class="baike_css19" id="ad4">
+
+					</div>
+
+					<div style="clear: both;">
+					</div>
+				</div>
+				<div style="clear: both;">
+				</div>
+				<div class="rollphotos">
+					<div class="FixTitle">
+						<h3> 图片百科</h3>
+					</div>
+					<div class="tu_lunbo">
+						<div id="box">
+							<ul id="list">
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							<li>
+								<a><img src="../img/2017042817122728.jpg"/></a>
+								<a>给宾客倒茶，人家为...</a>
+							</li>
+							</ul>
+						</div>
+						<span id="last">&lt;</span>
+						<span id="next">&gt;</span>
+					</div>
+				</div>
+				<div class="youlian_bk">
+					<div class="baike_yl">
+						<span>【欢迎交换链接与美酒网共赢天下！ QQ：2234426535·1151952746】| <a href="http://www.9928.tv/links/">
+                    更多>></a></span>
+					</div>
+					<div class="yl_allabove">
+
+						<a target="_blank" href='http://www.9928.tv'>
+							酒水代理</a>
+
+						<a target="_blank" href='http://pinpai.9928.tv'>
+							名酒品牌</a>
+
+						<a target="_blank" href='http://tangjiuhui.9928.tv/'>
+							春季成都糖酒会</a>
+
+						<a target="_blank" href='http://mingjiu.9928.tv'>
+							中国名酒网</a>
+
+						<a target="_blank" href='http://wenda.9928.tv/'>
+							酒水问答</a>
+
+						<a target="_blank" href='http://www.zhejiangfood.net/'>
+							浙江食品网</a>
+
+						<a target="_blank" href='http://www.jiu160.com/'>
+							酒业</a>
+
+						<a target="_blank" href='http://zhuanti.9111.tv/'>
+							中国十大名酒</a>
+
+						<a target="_blank" href='http://baijiu.9928.tv/'>
+							白酒招商加盟</a>
+
+						<a target="_blank" href='http://www.kjh9.cn/'>
+							客家黄酒</a>
+
+						<a target="_blank" href='http://www.9928.tv/'>
+							酒水代理</a>
+
+						<a target="_blank" href='http://ybtrjy.9928.tv/'>
+							碱性酒</a>
+
+						<a target="_blank" href='http://www.9928.tv/company/liangjian/'>
+							亮剑啤酒</a>
+
+						<a target="_blank" href='http://www.9928.tv/company/maotaizhenpinchang/'>
+							茅台镇珍品酒厂</a>
+
+					</div>
+				</div>
+				<div style="clear: both;">
+				</div>
+			</div>
+
+			<div class="bk_bottom">
+				<div class="bk_btm_dh">
+					<a href="http://www.9928.tv/" target="_blank">网站首页</a> |
+					<a href="http://www.9928.tv/Article_9928/about.html" target="_blank">关于我们</a> |
+					<a href="http://www.9928.tv/Article_9928/copyright.html" target="_blank">法律声明</a> |
+					<a href="http://www.9928.tv/Article_9928/contact.html" target="_blank">联系我们</a>
+				</div>
+				<div class="bk_btm_cont">版权所有 中国美酒招商网-WWW.9928.TV Copy Right 2010-2020<br/>备案：豫ICP备10209129号 增值电信业务经营许可证：豫B2-20160332
+					<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41010502003153" rel="nofollow"><img src="../picture/ghs.png" style="width:16px; margin-right:2px; position:relative; top:-4px" />豫公网安备 41010502003153号</a><br/>免责声明：本站只起到信息平台作用，不为交易经过负任何责任,请双方谨慎交易,以确保您的权益。<br/>内容的真实性、准确性和合法性由发布企业或个人负责。如有信息、图片侵权，请及时联系我们处理。
+					<span style="display:none"></span>
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript">
+			var Box=document.getElementById("box");
+			var List=document.getElementById("list");
+			var aLi=List.children;
+			var perWidth=aLi[0].offsetWidth;
+			List.style.width=aLi.length*perWidth+"px";
+			var i=0;
+			var timer = setInterval(function(){
+				move();
+			},3000);
+			//move没有很理解
+			function move(){
+				i+=3;
+				if(parseInt(List.style.left)<=-(parseInt(List.style.width)-920)){
+					startMove(List,{"left":-perWidth*(i-1)});
+					i=0;			
+				}
+				startMove(List,{"left":-perWidth*i});
+			}
+			var oLia=document.getElementsByClassName("li_a");
+
+			for(let i=0;i<oLia.length;i++){
+				oLia[i].onclick=function(){
+					for(var j=0;j<oLia.length;j++){
+						oLia[j].className="li_a";
+					}
+					oLia[i].className="navbiao li_a";
+				}
+			}
+		</script>
+	</body>
+
+</html>
