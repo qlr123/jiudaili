@@ -224,10 +224,13 @@
 					
 //					console.log(sum);
 //					console.log(flag,flag1,flag2,flag3,flag4)
+					var user=$("#bl1").val();
+					var pwd=$("#bl2").val();
 					var tel=$("#bl4").val();
+					var email=$("#bl5").val();
 					var yzm=$("#code").val();
 //					console.log(val,yzm)
-					if(sum==5){
+					/*if(sum==5){
 						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do?code="+yzm+"&phone="+tel,function(data){
 							console.log(data);
 //							console.log(data.msg)
@@ -241,9 +244,26 @@
 							 	console.log("验证失败")
 							 }
 						})
-							 
-					}
+					}*/
+					data={"userName":user,"password":pwd,"phone":tel,"email":email,"userType": 0}
+					data=JSON.stringify(data)
+					console.log(data)
+//					$.ajax({
+//						type:"POST",
+//						contentType:"application/json",
+//						data: data,
+//						url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
+//						async:true,
+//						success:function(data){
+//							console.log(data);
+//						}
+//						
+//					});
+					$.post("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",{"userName":user,"password":pwd,"phone":tel,"email":email,"userType": 0},function(data){
+						console.log(data)
+					})
 					
+				
 				})
 
 				
