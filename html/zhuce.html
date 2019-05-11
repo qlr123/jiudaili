@@ -248,20 +248,27 @@
 					data={"userName":user,"password":pwd,"phone":tel,"email":email,"userType": 0}
 					data=JSON.stringify(data)
 					console.log(data)
-//					$.ajax({
-//						type:"POST",
-//						contentType:"application/json",
-//						data: data,
-//						url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
-//						async:true,
-//						success:function(data){
+					$.ajax({
+						type:"POST",
+						contentType:"application/json",
+						data: data,
+						url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
+						async:true,
+						success:function(data){
 //							console.log(data);
-//						}
-//						
-//					});
-					$.post("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",{"userName":user,"password":pwd,"phone":tel,"email":email,"userType": 0},function(data){
-						console.log(data)
-					})
+							if(data.code)
+							{
+								console.log(data.msg)
+							}else
+							{
+								alert(data.msg)
+							}
+						}
+						
+					});
+//					$.post("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",{"userName":user,"password":pwd,"phone":tel,"email":email,"userType": 0},function(data){
+//						console.log(data)
+//					})
 					
 				
 				})
