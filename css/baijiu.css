@@ -91,20 +91,21 @@ a:hover{
     text-align: center;
     line-height: 50px;
     background: #077eb0;
-    color: #fff;
     cursor: pointer;
+}
+.p-menu li a{
+	color: #fff;
 }
 .p-menu li:last-child,.p-menu li:nth-child(5){
 	background:#0196d4;
 }
 .p-menu li:hover,.p-menu li.hover{
 	background: red;
-	color:yellow;
 }
-.p-menu a:hover{
+.p-menu li:hover a,.p-menu li.hover a{
+	color:yellow;
 	text-decoration: none;
 }
-
 .p-img{
 	width: 1000px;
 	height:2821px;

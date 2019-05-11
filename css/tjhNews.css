@@ -1,25 +1,21 @@
-.n-main li:nth-child(2) span{
+.n-main li:nth-child(3) span{
 	display: block;
 }
-.n-main li:nth-child(2) a{
+.n-main li:nth-child(3) a{
 	color:#1c78c5;
 }
-.n-main:hover li:nth-child(2) span{
+.n-main:hover li:nth-child(3) span{
 	display: none;
 }
-.n-main:hover li:nth-child(2) a{
+.n-main:hover li:nth-child(3) a{
 	color:#333;
 }
-.n-main:hover li:nth-child(2):hover span{
+.n-main:hover li:nth-child(3):hover span{
 	display: block;
 }
-.n-main:hover li:nth-child(2):hover a{
+.n-main:hover li:nth-child(3):hover a{
 	color:#1c78c5;
 }
-body a:hover{
-	text-decoration: none;
-}
-/*main*/
 .main{
 	width:1190px;
     margin: 15px auto 0 auto;
@@ -38,7 +34,6 @@ body a:hover{
 	position: relative;
     top: -1px;
 }
-/*搜索*/
 .m-search{
 	height: 161px;
 	width: 100%;
@@ -85,7 +80,7 @@ body a:hover{
 
 
 .m-bottom{
-	height: 1870px;
+	height: 1116px;
 }
 
 /*展会详情*/
@@ -117,58 +112,27 @@ body a:hover{
 .m-b-list{
 	width:100%;
 }
-
-.m-b-list ul>li{
-	position: relative;
-    padding: 16px 0 16px 150px;
-    border-bottom: #f0f0f0 1px solid;
-    height: 172px;
+.m-b-list ul{
+	border-bottom: 1px #e2e3e3 dotted;
+    padding: 12px 0;
 }
-.m-b-list li img{
-	width: 130px;
-    position: absolute;
-    left: 0;
+.m-b-list ul li{
+	font-size: 15px;
+    line-height: 31px;
+    position: relative;
+    background: url(../img/dot.jpg) no-repeat left center;
+    padding-left: 10px;
+    color: #fff;
 }
-.m-b-list .xinxi{
-    width: 690px;
-    height: 112px;
+.m-b-list li a{
+	float: left;
 }
-.m-b-list .xinxi b{
-	display: block;
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 3px;
-    text-shadow: 0px 1px 0px #fff;
-}
-.m-b-list .xinxi span{
+.m-b-list li span{
 	position: absolute;
-    top: 45px;
-    right: 45px;
-    border: #333 1px solid;
-    padding: 10px;
-    font-size: 24px;
-    text-shadow: 0px 1px 0px #fff;
-    font-weight: bold;
+	right: 0;
+    font-size: 14px;
+    color: #999;
 }
-.m-b-list .xinxi span i{
-	font-style: normal;
-	color: #d50511;
-    font-size: 26px;
-    margin:0 4px;
-}
-.m-b-list .xinxi b a{
-	color: #333;
-}
-.m-b-list .xinxi b:hover a{
-	color:#ba0000;
-}
-.m-b-list .xinxi p{
-	font-size: 14px;
-    line-height: 22px;
-    margin: 4px 0;
-    color: #333;
-}
-
 /*fenye*/
 .m-b-fenye{
 	font-size: 16px;
@@ -221,4 +185,3 @@ body a:hover{
 }
 .m-b-right li a{
 	color: #666;
-}  
