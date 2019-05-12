@@ -125,9 +125,9 @@ $(function(){
 				
 				
 				
-				$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/region/all.do",function(data){
-					console.log(data)
-				})
+//				$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/region/all.do",function(data){
+//					console.log(data)
+//				})
 //				$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/navigationBar/all.do",function(data1){
 //					console.log(data1)
 //				})

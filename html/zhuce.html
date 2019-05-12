@@ -130,7 +130,7 @@
 		</footer>
 		<script type="text/javascript">
 			var reg1 = /^\w{4,}/;
-			var reg2 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+			var reg2 = /[0-9A-Za-z]{6,16}$/;
 			var reg4 = /^1(3|5|6|7|8|9)\d{9}$/;
 			var reg5 = /^\w+@\w+(\.\w+)+$/
 			var flag=false;
@@ -218,6 +218,14 @@
 					}
 				})
 				
+				var num=2//判断是厂家还是经销商，1=厂家，2=经销商；
+				$(".r1").click(function(){
+					num=2;
+				})
+				$(".r2").click(function(){
+					num=1;
+				})
+				
 				//点击注册按钮
 				$("#bl9").click(function(){
 					var sum=flag+flag1+flag2+flag3+flag4;
@@ -229,46 +237,47 @@
 					var tel=$("#bl4").val();
 					var email=$("#bl5").val();
 					var yzm=$("#code").val();
+					data1={"userName":user,"password":pwd,"phone":tel,"email":email,"userType": num}
+					data1=JSON.stringify(data1)
+					console.log(data1)
 //					console.log(val,yzm)
-					/*if(sum==5){
+					if(sum==5){
 						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do?code="+yzm+"&phone="+tel,function(data){
-							console.log(data);
+//							console.log(data);
 //							console.log(data.msg)
 							$("#tishi").val(data.msg)
 							 $("#tishi").show(); 
 							 if(data.code){
-							 	console.log("验证成功")
-//							 	location.href="index.html"
+//							 	console.log("验证成功")
+//							 	
+								$.ajax({
+										type:"POST",
+										contentType:"application/json",
+										data: data1,
+										url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
+										async:true,
+										success:function(data){
+				//							console.log(data);
+											if(data.code)
+											{
+												alert(data.msg)
+												location.href="fabusj.html";
+											}else
+											{
+												alert(data.msg)
+											}
+										}
+										
+									});
+
 							 }
 							 else{
 							 	console.log("验证失败")
 							 }
 						})
-					}*/
-					data={"userName":user,"password":pwd,"phone":tel,"email":email,"userType": 0}
-					data=JSON.stringify(data)
-					console.log(data)
-					$.ajax({
-						type:"POST",
-						contentType:"application/json",
-						data: data,
-						url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
-						async:true,
-						success:function(data){
-//							console.log(data);
-							if(data.code)
-							{
-								console.log(data.msg)
-							}else
-							{
-								alert(data.msg)
-							}
-						}
-						
-					});
-//					$.post("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",{"userName":user,"password":pwd,"phone":tel,"email":email,"userType": 0},function(data){
-//						console.log(data)
-//					})
+					}
+					
+					
 					
 				
 				})
