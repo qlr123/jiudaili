@@ -35,19 +35,11 @@
 					<a><img src="../img/logo1.jpg" /></a>
 				</div>
 				<ul>
-					<li>
-						<a>美酒招商网首页</a>
-					</li>
-					<li>
-						<a>美酒百科</a>
-					</li>
-					<li>
-						<a>加盟项目</a>
-					</li>
-					<li>
-						<a>黄金项目</a>
-					</li>
-				</ul>
+						<li><a href="index.html" target="_blank">美酒招商网首页</a></li>
+						<li><a href="meijiubaike.html" target="_blank">美酒百科</a></li>
+						<li><a target="_blank" href="company.html">加盟项目</a></li>
+						<li><a target="_blank" href="mingjiuzs.html">黄金项目</a></li>
+					</ul>
 				<div class="search">
 					<div class="d1">
 						<input type="text" placeholder="请在此输入你的问题" />
@@ -97,66 +89,66 @@
 			<div class="left">
 				<div class="up">
 					<h3> 创业生意经<a>清除筛选条件</a></h3>
-					<ul>
+					<ul >
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="liang jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●项目选择(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●市场营销(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●项目选择(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●市场营销(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●项目选择(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●市场营销(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●项目选择(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●市场营销(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●项目选择(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●酒知识(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 						<li>
-							<a>●市场营销(538)</a>
+							<a class="jiulist">●酒知识(538)</a>
 						</li>
 					</ul>
 				</div>
@@ -345,6 +337,17 @@
 
 	</body>
 	<script type="text/javascript">
+		var know=document.getElementsByClassName("jiulist");
+		for(let i=0;i<know.length;i++){
+			know[i].onclick=function(){
+				for(var j=0;j<know.length;j++){
+					know[j].className="jiulist";
+				}
+				know[i].className="liang jiulist";
+			}
+		}
+		
+		
 		$(function() {
 			var i = 0;
 			var m = 0;
@@ -402,6 +405,10 @@
 					m = 0
 				}
 			}, 2000)
+			$(".tiwen").click(function(){
+				location.href="fabusj.html";
+			})
+			
 		})
 	</script>
 

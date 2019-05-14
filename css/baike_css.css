@@ -17,7 +17,7 @@ a:hover{color:#ff0000;text-decoration:underline;}
 .bk_input{width:338px; padding-left:5px; height:34px; line-height:34px; background:url(../img/shbg.jpg) no-repeat; border:#000000 0px solid;}
 .bk_menu{width:1000px;height:50px; margin:0 auto;}
 .bk_menu ul{ margin-left:80px;}
-.bk_menu li{ float:left; width:87px; line-height:40px; text-align:center; background:url(../img/menubg.jpg) no-repeat; height:32px; font-size:14px; font-weight:bold;}
+.bk_menu li{ float:left; width:87px; line-height:40px; text-align:center; background:url(../img/menubg1.jpg) no-repeat; height:32px; font-size:14px; font-weight:bold;}
 .bk_menu li a{color:#FFFFFF; text-decoration:none;}
 .bk_menu li a:hover{color:#fff600; text-decoration:underline;}
 .bk_menu li .navbiao{color:#fff554;}
@@ -261,6 +261,14 @@ a:hover{color:#ff0000;text-decoration:underline;}
 .tu_lunbo li a:first-child img{
 	border: #e2e3e3 1px solid;
 	padding: 3px;
+}
+.bk_top_dhxq span {
+    float: right;
+    width: 40px;
+    
+}
+.bk_top_dhxq span a{
+	margin-left: 5px;
 }
 .tu_lunbo li a:last-child{line-height: 20px;font-size: 12px;display: block;width: 200px;height: 20px;text-align: center;}
 .tu_lunbo span{width: 30px;height: 120px;position: absolute;opacity:0.8;background: #aaa;color: #000;font-size: 30px;line-height: 120px;text-align: center;cursor: pointer;}
