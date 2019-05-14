@@ -26,7 +26,8 @@ border: #d03232 2px solid;
 height: 32px;
 width: 400px;
 padding: 0 5px;
-font-size: 14px;}
+font-size: 14px;
+margin-left: 90px;}
 .jkj .input2{
 	height: 36px;
 border: 0;
@@ -39,7 +40,7 @@ position: relative;
 top: 1px;
 margin-left: 10px;
 }
-
+.list{margin-left: 90px;}
 .list li{float: left; font-size: 14px; margin: 0 4px;}
 .list li a:hover{color: red;text-decoration: underline;}
 .jkj-right{width: 160px;height: 80px; float: right;}
@@ -170,7 +171,7 @@ height: 50px;}
 .bkdiv{height: 560px;width:1190px;border-left:#F7F7F7}
 .a-left {height:560px;width:235px;float: left;}
 .bkdiv .A-left p img{width: 235px;height: 417px;display: block;}
-.bkdiv .A-left-fg {padding: 31px 14px;
+.bkdiv .A-left-fg {padding: 9px 14px;
 font-size: 14px;
 line-height: 28px;
 border-bottom: #ebebeb 1px solid;width: 205px;}
@@ -258,7 +259,7 @@ line-height: 28px;
 .mj-right ul li p{font-size: 14px;
 line-height: 20px;
 padding: 0 12px;width: 176px;}
-.mj-right ul li{float: left;width: 176px;height: 238px;border: 1px solid #CECECE;border-top: none;border-left: none;}
+.mj-right ul li{float: left;width: 176px;height: 232px;border: 1px solid #CECECE;border-top: none;border-left: none;}
 
 
 

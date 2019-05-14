@@ -418,4 +418,14 @@ header{
 	padding: 0;
 	
 }
-
+.fangda{
+	position: absolute;
+    z-index: 99999;
+    top: -60px;
+    right: -185px;
+    background: #d6f2f2;
+    padding: 10px;
+    display: none;
+	width:150px;
+	height:150px;
+}

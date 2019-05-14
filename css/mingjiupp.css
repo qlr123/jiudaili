@@ -116,7 +116,7 @@ a:hover {
 
 .pinpai-zixun h2 {
 	margin-left: 40px;
-	height: 50px;
+	height: 40px;
 	line-height: 50px;
 }
 
@@ -148,7 +148,7 @@ a:hover {
 }
 
 .pinpai h2 {
-	font-size: 20px;
+	font-size: 18px;
 	font-style: italic;
 }
 
@@ -180,15 +180,15 @@ a:hover {
 }
 
 .pinpai ul {
-	margin-top: 20px;
+	margin-top: 5px;
 	margin-left: 20px;
 }
 
 .pinpai li {
 	float: left;
 	width: 210px;
-	height: 22px;
-	font-size: 14px;
+	height: 18px;
+	font-size: 13px;
 	padding-left: 3px;
 	background: url(../img/pinpai-dian.jpg) no-repeat left center;
 }
@@ -684,136 +684,4 @@ a:hover {
 	margin-left: 13px;
 }
 
-.fu-he-zi {
-	width: 100%;
-	height: 390px;
-	background: #f3f3f3;
-	margin-top: 20px;
-}
-
-.fu-he-zi h3 {
-	color: #ca0202;
-	font-weight: normal;
-	height: 45px;
-	line-height: 45px;
-	margin-top: 10px;
-}
-
-.fu-he-zixun {
-	width: 1000px;
-	margin: 0 auto;
-}
-
-.fu-wu {
-	width: 220px;
-	height: 395px;
-	float: left;
-
-}
-
-.fu-wu span {
-	display: inline-block;
-	width: 210px;
-	height: 124px;
-	font: 16px "楷体";
-	line-height: 22px;
-	text-indent: 2em;
-
-}
-
-.zhaochanpin {
-	width: 210px;
-	height: 60px;
-	background: #5b95f9;
-	color: #fff;
-	text-align: center;
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-.fu-wu>p {
-	width: 210px;
-	height: 60px;
-	background: #00c4d4;
-	color: #fff;
-	font-size: 20px;
-	text-align: center;
-	margin-top: 10px;
-	line-height: 60px;
-	font-weight: bold;
-}
-
-.hezuo-zhongxin {
-	width: 485px;
-	height: 397px;
-	margin-left: 10px;
-	
-	float: left;
-	
-}
-
-.hezuo-zhongxin ul{
-	width: 480px;
-	height: 300px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-}
-.hezuo-zhongxin li {
-	width: 440px;
-	height: 45px;
-	background: #fff;
-	line-height: 45px;
-	margin-top: 5px;
-	padding-left: 20px;
-}
-
-.hezuo-zhongxin li img {
-	float: right;
-	width: 35px;
-	margin-top: 4px;
-	margin-right: 4px;
-}
-
-.zixun-zhongxin {
-	width: 230px;
-	height: 350px;
-	float: left;
-	margin-left: 20px;
-}
-
-.zixun-zhongxin h4 {
-	color: #ca0202;
-	font-weight: normal;
-	height: 25px;
-	font-size: 14px;
-	line-height: 25px;
-	
-}
-
-.zixun-zhongxin p {
-	font-size: 14px;
-	width: 80px;
-
-}
-
-.zixun-zhongxin li {
-	width: 230px;
-	height: 40px;
-	font-size: 12px;
-	float: left;
-	margin-top: 10px;
-	border-bottom: 1px solid #dcdbdb;
-	position: relative;
-}
-
-.zixun-zhongxin img {
-	float: right;
-	width: 35px;
-	position: absolute;
-	right: 2px;
-	top: 2px;
-}
 

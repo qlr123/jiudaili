@@ -1,0 +1,188 @@
+.main{
+	width:1000px;;
+	height: 2069px;
+	margin: 0 auto;
+}
+.m-dq{
+	width: 1000px;
+	height: 184px;
+	background: #f8f8f8;
+    margin: 8px auto;
+}
+.m-dq ul{
+	width: 1000px;
+    height: 184px;
+    background: url(../img/diqufen.jpg) no-repeat left;;
+}
+.m-dq li{
+    margin-left: 94px;
+    padding-left: 12px;
+    float: left;
+    width: 906px;
+    line-height: 24px;
+    font-size: 14px;
+}
+.m-dq li:nth-child(odd){
+	background: #fff;
+}
+.m-dq li a{
+	width: 50px;
+    text-align: left;
+    float: left;
+}
+.m-all{
+	width: 1000px;
+	background: #fff;
+	height: 321px;
+}
+.m-all h3{
+	padding-left: 10px;
+    line-height: 36px;
+    color: #760000;
+    font-size: 16px;
+    background: #f6f4f5;
+    border: #dfdfdf 1px solid;
+}
+.m-all h3 span{
+	float: right;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+}
+.m-all span a{
+	color: #760000;
+    padding: 0 3px;
+}
+.m-all h3 a:hover{
+	color: #760000;
+}
+.m-dq-count{
+	width: 1000px;
+	height: 283px;
+    margin: 0 0 8px 0;
+    padding-top: 12px;
+    border-left: #dfdfdf 1px solid;
+    border-right: #dfdfdf 1px solid;
+    border-bottom: #dfdfdf 1px solid;
+}
+.m-dq-count li{
+    margin: 0 0 10px 10px;
+    float: left;
+    width: 188px;
+    background: #f0f0f0;
+    line-height: 24px;
+    text-align: center;
+}
+.m-dq-count li img{
+	width: 188px;
+    height: 101px;
+}
+.m-dq-count li a{
+	color: #333;
+}
+.m-dq-count li a:hover{
+	color:#f00;
+	text-decoration: none;
+}
+.m-dq-new{
+	width: 1000px;
+    padding-top:10px;
+}
+.m-xiao{
+	width: 242px;
+    float: left;
+}
+.m-xiao h3{
+	width: 242px;
+    padding-left: 10px;
+    line-height: 30px;
+    color: #760000;
+    font-size: 14px;
+    background: url(../img/navbg.jpg);
+    border: #dfdfdf 1px solid;
+}
+.m-xiao h3 span{
+	float: right;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.m-xiao h3 span a{
+	color: #760000;
+}
+.m-xiao ul{
+	width: 242px;
+    border-left: #dfdfdf 1px solid;
+    border-right: #dfdfdf 1px solid;
+    border-bottom: #dfdfdf 1px solid;
+    overflow: hidden;
+    padding: 6px 0;
+}
+.m-xiao ul li{
+	width: 220px;
+    margin-left: 10px;
+    line-height: 28px;
+    font-size: 14px;
+    height: 28px;
+    overflow: hidden;
+    border-bottom: #e7e7e7 1px dashed;
+}
+.m-xiao li span a,.m-xiao li span a:hover{
+	color:#f00;
+	text-decoration: none;
+}
+/*我们的服务*/
+.our{
+	width: 1000px;
+	height: 144px;
+    margin: 10px auto 0 auto;
+    padding: 20px 0 10px 0;
+}
+.o-left{
+	float: left;
+    width: 500px;
+    height: 116px;
+}
+.o-left h4,.o-right h4{
+	font-size: 18px;
+    text-shadow: 1px 0px 0px #fff;
+    color: #333;
+    padding-bottom: 8px;
+}
+.o-left ul{
+	padding: 8px 10px;
+}
+.o-left ul li{
+	float: left;
+    width: 150px;
+    margin-right: 8px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 16px;
+    background: #5b95f9;
+    text-align: center;
+    padding: 8px 0;
+}
+.o-right{
+	float: left;
+	height: 116px;
+    width: 500px;
+}
+
+.o-right li{
+	float: left;
+    width: 78px;
+    text-align: center;
+    margin: 8px 5px 0 0;
+    line-height: 26px;
+    position: relative;
+}
+.o-right li p{
+	font-size: 12px;
+}
+.o-right li img{
+	width:56px;
+	height: 56px;
+}

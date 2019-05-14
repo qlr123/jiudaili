@@ -34,8 +34,8 @@
 					<div class="right">
 						<h2>用户登录</h2>
 						<form method="post">
-							<input type="text" placeholder="用户名" />
-							<input type="password" placeholder="密码" />
+							<input type="text" placeholder="用户名" id="user"/>
+							<input type="password" placeholder="密码" id="pwd"/>
 							<p>
 								<a>忘记密码？</a>
 							</p>
@@ -43,6 +43,7 @@
 							<div class="f_end">
 								<input type="button" value="登      录" class="deng" class="btn"/>
 								<a class="zhu" href="zhuce.html" >免 费 注 册</a>
+
 							</div>
 						</form>
 						<h3>三秒登录，畅享服务，酒水招商就是这么简单！</h3>
@@ -75,6 +76,10 @@
 		<script type="text/javascript">
 		
 			$(function() {
+				$(".zhu").click(function(){
+					location.href="zhuce.html"
+				})
+				
 				$("#yanzhengma").click(function(){
 					$("#canvas").css("display","block")
 				})
@@ -83,19 +88,41 @@
 				$("#canvas").on('click', function() {
 					draw(show_num);
 				})
-				$(".btn").on('click', function() {
-					var val = $(".input-val").val().toLowerCase();
+			
+				
+				$(".deng").on('click', function() {
+					var user=$("#user").val();
+					var pwd=$("#pwd").val();
+					var data={"userName":user,"password":pwd}
+					
+					data=JSON.stringify(data);
+//					console.log(data)
+//					console.log($("#yanzhengma").val())
+					var val = $("#yanzhengma").val().toLowerCase();
 					var num = show_num.join("");
+					
 					if(val == '') {
 						alert('请输入验证码！');
 					} else if(val == num) {
-						alert('提交成功！');
-						$(".input-val").val('');
+//						alert('提交成功！');
+//						$("#yanzhengma").val('');
 						// draw(show_num);
+						$.ajax({
+						type:"POST",
+						contentType:"application/json",
+						data:data,
+						url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
+						async:true,
+						success:function(data){
+//							console.log(data);
+							alert(data.msg)
+						}
+						});
+						
 					} else {
 						alert('验证码错误！请重新输入！');
-						$(".input-val").val('');
-						// draw(show_num);
+						$("#yanzhengma").val('');
+						 draw(show_num);
 					}
 				})
 			})

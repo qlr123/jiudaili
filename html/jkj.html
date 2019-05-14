@@ -6,7 +6,10 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/jkj.css" />
 		<link rel="stylesheet" type="text/css" href="../css/foot.css" />
+		<script src="../js/startMove.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/touminglunbo.css"/>
+		<script src="../js/touminglunbo.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/jkj.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
@@ -78,19 +81,19 @@
 				<div class="nav-main">
 					<ul class="n-list">
 						<li>
-							<a href="" target="_blank">首页</a>
+							<a href="jkjerji.html" target="_blank">首页</a>
 						</li>
 						<li>
-							<a href="" target="_blank">进口红酒</a>
+							<a href="jkjerji.html" target="_blank">进口红酒</a>
 						</li>
 						<li>
-							<a href="" target="_blank">进口啤酒</a>
+							<a href="jkjerji.html" target="_blank">进口啤酒</a>
 						</li>
 						<li>
-							<a href="" target="_blank">进口洋酒</a>
+							<a href="jkjerji.html" target="_blank">进口洋酒</a>
 						</li>
 						<li>
-							<a href="" target="_blank">进口特色酒</a>
+							<a href="jkjerji.html" target="_blank">进口特色酒</a>
 						</li>
 					</ul>
 				</div>
@@ -99,8 +102,28 @@
 		</div>
 		<!--头部结束-->
 		<div class="qwe">
-			<div class="banner">
-				<div class="b-main">
+			<div class="banner" style="position: relative;">
+				<!--加轮播-->
+				<div id="banner">
+			    <ul id="bannerList">
+				<li><img src="../img/15364820.jpg"></li>
+				<li><img src="../img/10585365.jpg"></li>
+				<li><img src="../img/10582604.jpg"></li>
+			</ul>
+			
+			<ul id="nums">
+			</ul>
+		</div>
+		<script src="move.js" type="text/javascript" charset="utf-8"></script>
+		<script src="slider.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var banner = new Banner("banner");
+			banner.autoPlay();
+			
+			banner.createNums();
+		</script>
+				
+				<div class="b-main" style="position: absolute; z-index: 1;top: 1px;left: 37px;">
 					
 					<div class="b-left">
 					
@@ -113,10 +136,8 @@
 							
 						})
 						
-					</script>
+				</script>
 					
-					
-
 					<div class="b-right">
 						<img src="../img/09093901.jpg" />
 						<img src="../img/09093901.jpg" />
@@ -157,18 +178,18 @@
 				</ul>
 				<!--以下是推荐部分四张图片-->
 				<div class="bk-tui">
-					<ul class="tu-list">
+					<ul class="tu-list" style="margin-top: 10px;">
 						<li>
-							<a href="" target="_blank"><img src="../img/tuijian.jpg" /></a>
+							<a href="" target="_blank"><img src="../img/17364888.jpg" /></a>
 						</li>
 						<li>
-							<a href="" target="_blank"><img src="../img/tuijian.jpg" /></a>
+							<a href="" target="_blank"><img src="../img/17374184.jpg" /></a>
 						</li>
 						<li>
-							<a href="" target="_blank"><img src="../img/tuijian.jpg" /></a>
+							<a href="" target="_blank"><img src="../img/17364888.jpg" /></a>
 						</li>
 						<li>
-							<a href="" target="_blank"><img src="../img/tuijian.jpg" /></a>
+							<a href="" target="_blank"><img src="../img/17374184.jpg" /></a>
 						</li>
 					</ul>
 				</div>

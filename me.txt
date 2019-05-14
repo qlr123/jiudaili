@@ -1,14 +1,2 @@
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
-My stupid boss still prefers SVN.
-do something 
-b do something
-test dev
-test dev1
-aaaaa
-bbbb
-123
-testttttttt
-PULL下来千万不要被覆盖啊！！！
+test
+5月14-11:07-test2
