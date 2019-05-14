@@ -41,6 +41,9 @@
 .main .left .up ul li a{
 	font-size: 12px;
 }
+.main .left .up ul li .liang{
+	color: #f00;
+}
  .left_middle{
  	width: 760px;
  	height: 660px;
