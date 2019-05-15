@@ -6,7 +6,7 @@
 </div>
 <div class="top">
 	<div class="h_bk" style="height: 30px;line-height: 30px;">
-		<div class="pull-left">
+		<div class="pull-left" >
 			<span>欢迎来到9928美酒招商网，</span>
 			<a href="" id="login" style="border-right: 1px #8C8C8C solid;padding-right: 3px;" >登录</a>
 			<a href="zhuce.html" target="_blank">注册</a>
@@ -419,6 +419,33 @@
 			$(".bh").css({display:"none"})
 		})
 		
+		$('#btnLoginBarBtn').click(function(){
+			$(".login-section").css({display:"none"})
+			$(".bh").css({display:"none"})
+			var user=$("#loginBarName2").val();
+			var pwd=$("#loginBarPass2").val();
+			var data={"userName":user,"password":pwd}
+			
+			data=JSON.stringify(data);
+			
+//			console.log(data)
+			$.ajax({
+				type:"POST",
+				contentType:"application/json",
+				data:data,
+				url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
+				async:true,
+				success:function(data){
+					console.log(data);
+					alert(data.msg)
+					if(data.code){
+						
+					}
+					
+				}
+			});
+			
+		})
 
 	})
 </script>
