@@ -73,6 +73,7 @@
 				<p>版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020 电信与信息服务业务经营许可证：豫ICP备10209129号</p>
 			</div>
 		</footer>
+		<script src="../js/cook.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 		
 			$(function() {
@@ -116,6 +117,8 @@
 						success:function(data){
 //							console.log(data);
 							alert(data.msg)
+							setCookie("user",data.data,7)
+							location.href="index.html"
 						}
 						});
 						

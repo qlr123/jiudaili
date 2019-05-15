@@ -9,7 +9,7 @@
 		<div class="pull-left" >
 			<span>欢迎来到9928美酒招商网，</span>
 			<a href="" id="login" style="border-right: 1px #8C8C8C solid;padding-right: 3px;" >登录</a>
-			<a href="zhuce.html" target="_blank">注册</a>
+			<a href="zhuce.html" target="_blank" id="zhu">注册</a>
 			<img src="../img/zcsm.png" />
 		</div>
 		<div class="r_dh pull-left">
@@ -367,7 +367,7 @@
 <div class="bh">
 	
 </div>
-
+<script src="../js/cook.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	$(function()
 	{
@@ -419,6 +419,29 @@
 			$(".bh").css({display:"none"})
 		})
 		
+		if(getCookie("user")){
+			var data2=getCookie("user")
+//			console.log(String(data2))
+//			
+			$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkLogin.do?userToken="+data2,function(data1){
+//				console.log(data1)
+				$('#login').text("已登录")
+				$("#zhu").text("退出")
+			})
+			$("#zhu").click(function(){
+			var data2=getCookie("user")
+			$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/exitLogin.do?"+data2,function(data1){
+				
+				$('#login').text("登录")
+				$("#zhu").text("注册")
+			})
+			removeCookie("user");
+			location.reload()
+			return false;
+		})
+		}
+		
+		
 		$('#btnLoginBarBtn').click(function(){
 			$(".login-section").css({display:"none"})
 			$(".bh").css({display:"none"})
@@ -439,7 +462,8 @@
 					console.log(data);
 					alert(data.msg)
 					if(data.code){
-						
+						setCookie("user",data.data,7)
+						location.reload()
 					}
 					
 				}
