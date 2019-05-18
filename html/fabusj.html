@@ -1,185 +1,216 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/fabu.css" />
+    <script
+      src="../js/jquery-1.11.0.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </head>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>用户登录</title>
-		<link rel="stylesheet" type="text/css" href="../css/fabu.css" />
-		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-	</head>
+  <body>
+    <header>
+      <div class="top">
+        <p>
+          您好，欢迎来到美酒网！请
+          <a href="fabusj.html">登录</a>
+          <a href="zhuce.html">注册</a>
+        </p>
+        <div class="gf">
+          <a href="index.html">美酒首页</a>
+          <a href="#" class="weibo">官方微博</a>
+          <a href="#" class="weixin">官方微信</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="main">
+        <div class="logo">
+          <img src="../img/logo.jpg" />
+        </div>
+        <div class="mmain">
+          <div class="left">
+            <a href="#"><img src="../img/adv.jpg"/></a>
+          </div>
+          <div class="right">
+            <h2>用户登录</h2>
+            <form method="post">
+              <input type="text" placeholder="用户名" id="user" />
+              <input type="password" placeholder="密码" id="pwd" />
+              <p>
+                <a>忘记密码？</a>
+              </p>
+              <div>
+                <span>验证码：</span
+                ><input
+                  type="text"
+                  placeholder="点击显示验证码"
+                  id="yanzhengma"
+                /><canvas id="canvas" width="100" height="24"></canvas>
+              </div>
+              <div class="f_end">
+                <input
+                  type="button"
+                  value="登      录"
+                  class="deng"
+                  class="btn"
+                />
+                <a class="zhu" href="zhuce.html">免 费 注 册</a>
+              </div>
+            </form>
+            <h3>三秒登录，畅享服务，酒水招商就是这么简单！</h3>
+          </div>
+        </div>
+        <p>
+          高速安全、随时随地找产品/找经销商、看酒业新闻，关注美酒招商网官方微信一应俱全，
+          <a>去看看>></a>
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="end">
+        <ul>
+          <li>
+            <a>关于我们</a>
+          </li>
+          <li>
+            <a>友情链接</a>
+          </li>
+          <li>
+            <a>意见投诉</a>
+          </li>
+          <li>
+            <a>联系我们</a>
+          </li>
+        </ul>
+        <p>
+          版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020
+          电信与信息服务业务经营许可证：豫ICP备10209129号
+        </p>
+      </div>
+    </footer>
+    <script src="../js/cook.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function() {
+        $(".zhu").click(function() {
+          location.href = "zhuce.html";
+        });
 
-	<body>
-		<header>
-			<div class="top">
-				<p>您好，欢迎来到美酒网！请
-					<a href="fabusj.html">登录</a>
-					<a href="zhuce.html">注册</a>
-				</p>
-				<div class="gf">
-					<a href="index.html">美酒首页</a>
-					<a href="#" class="weibo">官方微博</a>
-					<a href="#" class="weixin">官方微信</a>
-				</div>
-			</div>
-		</header>
-		<section>
-			<div class="main">
-				<div class="logo">
-					<img src="../img/logo.jpg"/>
-				</div>
-				<div class="mmain">
-					<div class="left">
-						<a href="#"><img src="../img/adv.jpg" /></a>
-					</div>
-					<div class="right">
-						<h2>用户登录</h2>
-						<form method="post">
-							<input type="text" placeholder="用户名" id="user"/>
-							<input type="password" placeholder="密码" id="pwd"/>
-							<p>
-								<a>忘记密码？</a>
-							</p>
-							<div><span>验证码：</span><input type="text" placeholder="点击显示验证码" id="yanzhengma"/><canvas id="canvas" width="100" height="24"></canvas></div>
-							<div class="f_end">
-								<input type="button" value="登      录" class="deng" class="btn"/>
-								<a class="zhu" href="zhuce.html" >免 费 注 册</a>
+        $("#yanzhengma").click(function() {
+          $("#canvas").css("display", "block");
+        });
+        var show_num = [];
+        draw(show_num);
+        $("#canvas").on("click", function() {
+          draw(show_num);
+        });
 
-							</div>
-						</form>
-						<h3>三秒登录，畅享服务，酒水招商就是这么简单！</h3>
-					</div>
-				</div>
-				<p>高速安全、随时随地找产品/找经销商、看酒业新闻，关注美酒招商网官方微信一应俱全，
-					<a>去看看>></a>
-				</p>
-			</div>
-		</section>
-		<footer>
-			<div class="end">
-				<ul>
-					<li>
-						<a>关于我们</a>
-					</li>
-					<li>
-						<a>友情链接</a>
-					</li>
-					<li>
-						<a>意见投诉</a>
-					</li>
-					<li>
-						<a>联系我们</a>
-					</li>
-				</ul>
-				<p>版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020 电信与信息服务业务经营许可证：豫ICP备10209129号</p>
-			</div>
-		</footer>
-		<script src="../js/cook.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-		
-			$(function() {
-				$(".zhu").click(function(){
-					location.href="zhuce.html"
-				})
-				
-				$("#yanzhengma").click(function(){
-					$("#canvas").css("display","block")
-				})
-				var show_num = [];
-				draw(show_num);
-				$("#canvas").on('click', function() {
-					draw(show_num);
-				})
-			
-				
-				$(".deng").on('click', function() {
-					var user=$("#user").val();
-					var pwd=$("#pwd").val();
-					var data={"userName":user,"password":pwd}
-					
-					data=JSON.stringify(data);
-//					console.log(data)
-//					console.log($("#yanzhengma").val())
-					var val = $("#yanzhengma").val().toLowerCase();
-					var num = show_num.join("");
-					
-					if(val == '') {
-						alert('请输入验证码！');
-					} else if(val == num) {
-//						alert('提交成功！');
-//						$("#yanzhengma").val('');
-						// draw(show_num);
-						$.ajax({
-						type:"POST",
-						contentType:"application/json",
-						data:data,
-						url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
-						async:true,
-						success:function(data){
-//							console.log(data);
-							alert(data.msg)
-							setCookie("user",data.data,7)
-							location.href="index.html"
-						}
-						});
-						
-					} else {
-						alert('验证码错误！请重新输入！');
-						$("#yanzhengma").val('');
-						 draw(show_num);
-					}
-				})
-			})
-			//生成并渲染出验证码图形
-			function draw(show_num) {
-				var canvas_width = $('#canvas').width();
-				var canvas_height = $('#canvas').height();
-				var canvas = document.getElementById("canvas"); //获取到canvas的对象，演员
-				var context = canvas.getContext("2d"); //获取到canvas画图的环境，演员表演的舞台
-				canvas.width = canvas_width;
-				canvas.height = canvas_height;
-				var sCode = "a,b,c,d,e,f,g,h,i,j,k,m,n,p,q,r,s,t,u,v,w,x,y,z,A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0";
-				var aCode = sCode.split(",");
-				var aLength = aCode.length; //获取到数组的长度
-				for(var i = 0; i < 4; i++) { //这里的for循环可以控制验证码位数（如果想显示6位数，4改成6即可）
-					var j = Math.floor(Math.random() * aLength); //获取到随机的索引值
-					// var deg = Math.random() * 30 * Math.PI / 180;//产生0~30之间的随机弧度
-					var deg = Math.random() - 0.5; //产生一个随机弧度
-					var txt = aCode[j]; //得到随机的一个内容
-					show_num[i] = txt.toLowerCase();
-					var x = 10 + i * 20; //文字在canvas上的x坐标
-					var y = 20 + Math.random() * 8; //文字在canvas上的y坐标
-					context.font = "bold 23px 微软雅黑";
-					context.translate(x, y);
-					context.rotate(deg);
-					context.fillStyle = randomColor();
-					context.fillText(txt, 0, 0);
-					context.rotate(-deg);
-					context.translate(-x, -y);
-				}
-				for(var i = 0; i <= 5; i++) { //验证码上显示线条
-					context.strokeStyle = randomColor();
-					context.beginPath();
-					context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
-					context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
-					context.stroke();
-				}
-				for(var i = 0; i <= 30; i++) { //验证码上显示小点
-					context.strokeStyle = randomColor();
-					context.beginPath();
-					var x = Math.random() * canvas_width;
-					var y = Math.random() * canvas_height;
-					context.moveTo(x, y);
-					context.lineTo(x + 1, y + 1);
-					context.stroke();
-				}
-			}
-			//得到随机的颜色值
-			function randomColor() {
-				var r = Math.floor(Math.random() * 256);
-				var g = Math.floor(Math.random() * 256);
-				var b = Math.floor(Math.random() * 256);
-				return "rgb(" + r + "," + g + "," + b + ")";
-			}
-		</script>
-	</body>
+        $(".deng").on("click", function() {
+          var user = $("#user").val();
+          var pwd = $("#pwd").val();
+          var data = { userName: user, password: pwd };
+
+          data = JSON.stringify(data);
+          //console.log(data)
+          //console.log($("#yanzhengma").val())
+          var val = $("#yanzhengma")
+            .val()
+            .toLowerCase();
+          var num = show_num.join("");
+
+          if (val == "") {
+            alert("请输入验证码！");
+          } else if (val == num) {
+            //	alert('提交成功！');
+            //	$("#yanzhengma").val('');
+            // draw(show_num);
+            $.ajax({
+              type: "POST",
+              contentType: "application/json",
+              data: data,
+              url:
+                "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
+              async: true,
+              success: function(data3) {
+                //							console.log(data3);
+                alert(data.msg);
+                var a = "+";
+                data3.data = data3.data.replace(/\+/g, "%2B");
+                setCookie("user", data3.data, 7);
+                location.href = "index.html";
+              }
+            });
+          } else {
+            alert("验证码错误！请重新输入！");
+            $("#yanzhengma").val("");
+            draw(show_num);
+          }
+        });
+      });
+      //生成并渲染出验证码图形
+      function draw(show_num) {
+        var canvas_width = $("#canvas").width();
+        var canvas_height = $("#canvas").height();
+        var canvas = document.getElementById("canvas"); //获取到canvas的对象，演员
+        var context = canvas.getContext("2d"); //获取到canvas画图的环境，演员表演的舞台
+        canvas.width = canvas_width;
+        canvas.height = canvas_height;
+        var sCode =
+          "a,b,c,d,e,f,g,h,i,j,k,m,n,p,q,r,s,t,u,v,w,x,y,z,A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0";
+        var aCode = sCode.split(",");
+        var aLength = aCode.length; //获取到数组的长度
+        for (var i = 0; i < 4; i++) {
+          //这里的for循环可以控制验证码位数（如果想显示6位数，4改成6即可）
+          var j = Math.floor(Math.random() * aLength); //获取到随机的索引值
+          // var deg = Math.random() * 30 * Math.PI / 180;//产生0~30之间的随机弧度
+          var deg = Math.random() - 0.5; //产生一个随机弧度
+          var txt = aCode[j]; //得到随机的一个内容
+          show_num[i] = txt.toLowerCase();
+          var x = 10 + i * 20; //文字在canvas上的x坐标
+          var y = 20 + Math.random() * 8; //文字在canvas上的y坐标
+          context.font = "bold 23px 微软雅黑";
+          context.translate(x, y);
+          context.rotate(deg);
+          context.fillStyle = randomColor();
+          context.fillText(txt, 0, 0);
+          context.rotate(-deg);
+          context.translate(-x, -y);
+        }
+        for (var i = 0; i <= 5; i++) {
+          //验证码上显示线条
+          context.strokeStyle = randomColor();
+          context.beginPath();
+          context.moveTo(
+            Math.random() * canvas_width,
+            Math.random() * canvas_height
+          );
+          context.lineTo(
+            Math.random() * canvas_width,
+            Math.random() * canvas_height
+          );
+          context.stroke();
+        }
+        for (var i = 0; i <= 30; i++) {
+          //验证码上显示小点
+          context.strokeStyle = randomColor();
+          context.beginPath();
+          var x = Math.random() * canvas_width;
+          var y = Math.random() * canvas_height;
+          context.moveTo(x, y);
+          context.lineTo(x + 1, y + 1);
+          context.stroke();
+        }
+      }
+      //得到随机的颜色值
+      function randomColor() {
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        return "rgb(" + r + "," + g + "," + b + ")";
+      }
+    </script>
+  </body>
 </html>

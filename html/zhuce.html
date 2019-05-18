@@ -141,7 +141,7 @@
 					if(!reg1.test($("#bl1").val())) {
 						$(".bl1 span").html("用户名在4到20个字符,请确认！");
 						$(".bl1 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
-						         
+						  flag1=0;       
 					} else {
 						flag1=1;
 						$(".bl1 span").html("该用户名可以注册");
@@ -152,7 +152,7 @@
 					if(!reg2.test($("#bl2").val())) {            
 						$(".bl2 span").html("新密码由6-16个字符组成，请确认");
 						$(".bl2 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
-						         
+						  flag2=0;             
 					} else {
 						flag2=1;
 						$(".bl2 span").html("新密码合法");
@@ -165,7 +165,7 @@
 						$(".bl3 span").html("输入正确");
 						$(".bl3 span").css("background","#E9FFEB url(../img/onCorrect.gif) no-repeat")    
 					} else {
-						
+						flag3=0; 
 						$(".bl3 span").html("2次密码不一致,请确认");
 						$(".bl3 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")	    
 					}      
@@ -175,7 +175,7 @@
 					if(!reg4.test($("#bl4").val())) {            
 						$(".bl4 span").html("你输入的手机格式不正确");
 						$(".bl4 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
-						         
+						flag=false;         
 					} else {
 						
 						flag=true;
@@ -187,7 +187,7 @@
 					if(!reg5.test($("#bl5").val())) {            
 						$(".bl5 span").html("你输入的邮箱格式不正确");
 						$(".bl5 span").css("background","#FFF2E9 url(../img/onError.gif) no-repeat")
-						         
+						flag4=0;         
 					} else {
 						flag4=1;
 						$(".bl5 span").html("谢谢合作");
@@ -231,7 +231,7 @@
 					var sum=flag+flag1+flag2+flag3+flag4;
 					
 //					console.log(sum);
-//					console.log(flag,flag1,flag2,flag3,flag4)
+					console.log(flag,flag1,flag2,flag3,flag4)
 					var user=$("#bl1").val();
 					var pwd=$("#bl2").val();
 					var tel=$("#bl4").val();
@@ -239,7 +239,7 @@
 					var yzm=$("#code").val();
 					data1={"userName":user,"password":pwd,"phone":tel,"email":email,"userType": num}
 					data1=JSON.stringify(data1)
-					console.log(data1)
+					// console.log(data1)
 //					console.log(val,yzm)
 					if(sum==5){
 						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do?code="+yzm+"&phone="+tel,function(data){

@@ -64,6 +64,31 @@
     font-family: "Microsoft Yahei";
     margin-top: 10px;
 }
+.onShow {
+				background: url(images/onShow.png) no-repeat 0 2px;
+				padding-left: 25px;
+				margin-left: 10px;
+				font-size: 12px;
+				line-height: 22px;
+				vertical-align: middle;
+			}
+
+			.onCorrect {
+    background: url(images/onCorrect.gif) no-repeat 0 2px;
+    padding-left: 25px;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+.onError {
+    background:  url(images/onError.gif) no-repeat 0 2px;
+    padding-left: 25px;
+    font-size: 12px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+		
 			.mdc-persistent-drawer .mdc-drawer-item .mdc-drawer-link i.mdc-drawer-item-icon {
 				font-size: 1.5rem;
 				margin-top: 5px;
@@ -173,8 +198,8 @@
 									<td width="20%" align="right">
 										用户名：
 									</td>
-									<td>
-										qinlirui
+									<td id="username">
+										
 									</td>
 								</tr>
 								<tr>
@@ -186,7 +211,7 @@
 									</td>
 									<td>
 										<div id="tbOldPwdTip" style="width: 300px; margin: 0px; padding: 0px; background: transparent;" class="onFocus">
-											<div class="onFocus">输入原密码</div>
+											<div class="onShow">输入原密码</div>
 										</div>
 									</td>
 								</tr>
@@ -231,10 +256,87 @@
 					</div>
 				</div>
 			</div>
+			<script src="../js/cook.js" type="text/javascript" charset="utf-8"></script>
 			<script type="text/javascript">
-				
-			</script>
+				var reg1 = /^\w{4,}/;
+				var reg2 = /[0-9A-Za-z]{6,16}$/;
+				var flag1=0;flag2=0;flag3=0;
+				$(function(){
+					if(getCookie("user")){
+						var data2=getCookie("user")
+						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkLogin.do?userToken="+data2,function(data1){
+							console.log(data1)
+							$('#username').text(data1.data.userName)
+							if(data1.code==0){
+								location.href="../html/zhuce.html";
+							}
+						})
+					}
 
+
+
+					$("#tbOldPwd").change(function() {         
+					if(!reg1.test($("#tbOldPwd").val())) {
+						$("#tbOldPwdTip div").html("请输入原密码");
+						$("#tbOldPwdTip div").attr("class","onError")
+						  flag1=0;       
+					} else {
+						flag1=1;
+						$("#tbOldPwdTip div").html("原密码合法");
+						$("#tbOldPwdTip div").attr("class","onCorrect")
+					}      
+				});
+				$("#tbNewPwd").change(function() {         
+					if(!reg2.test($("#tbNewPwd").val())) {            
+						$("#tbNewPwdTip div").html("新密码由6-16个字符组成，请确认");
+						$("#tbNewPwdTip div").attr("class","onError")
+						 flag2=0;        
+					} else {
+						flag2=1;
+						$("#tbNewPwdTip div").html("新密码合法");
+						$("#tbNewPwdTip div").attr("class","onCorrect")
+					}      
+				});
+				$("#tbConfimNewPwd").change(function() {  
+					       
+					if($("#tbConfimNewPwd").val()==$("#tbNewPwd").val()) { 
+						flag3=1;           
+						$("#tbConfimNewPwdTip div").html("输入正确");
+						$("#tbConfimNewPwdTip div").css("background","#E9FFEB url(images/onCorrect.gif) no-repeat")    
+					} else {
+						flag3=0;
+						$("#tbConfimNewPwdTip div").html("2次密码不一致,请确认");
+						$("#tbConfimNewPwdTip div").css("background","#FFF2E9 url(images/onError.gif) no-repeat")	    
+					}      
+				});
+
+				$('#btnSubmit').click(function(){
+					var sum = flag1+flag2+flag3;
+					console.log( flag1,flag2,flag3)
+					if(sum==3){
+						// console.log( flag1,flag2,flag3)
+						// console.log((getCookie("user")))
+						// var data={"orPassword":$("#tbOldPwd").val(),"password":$("#tbNewPwd").val(),"rePassword":$("#tbConfimNewPwd").val(),"userToken":getCookie("user")}
+						
+						// console.log(data)
+						// $.ajax({
+						// 	type: "get",
+							
+						// 	data: data,
+						// 	url: "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userDetail/updatePassword.do",
+						// 	success: function (response) {
+						// 		console.log(response)
+						// 	}
+						// });
+						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userDetail/updatePassword.do?orPassword="+$("#tbOldPwd").val()+"&password="+$("#tbNewPwd").val()+"&rePassword="+$("#tbConfimNewPwd").val()+"&userToken="+getCookie("user"),function(data){
+							console.log(data)
+							alert(data.msg)
+						})
+					}
+				})
+
+				})
+			</script>
 	</body>
 
 </html>

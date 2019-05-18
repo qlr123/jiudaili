@@ -6,9 +6,9 @@
 </div>
 <div class="top">
 	<div class="h_bk" style="height: 30px;line-height: 30px;">
-		<div class="pull-left" >
+		<div class="pull-left top1" >
 			<span>欢迎来到9928美酒招商网，</span>
-			<a href="" id="login" style="border-right: 1px #8C8C8C solid;padding-right: 3px;" >登录</a>
+			<a href="" id="login" style="padding-right: 3px;" >登录 |</a>
 			<a href="zhuce.html" target="_blank" id="zhu">注册</a>
 			<img src="../img/zcsm.png" />
 		</div>
@@ -420,29 +420,68 @@
 			$(".bh").css({display:"none"})
 		})
 		
+		//检验是否登录
 		if(getCookie("user")){
 			var data2=getCookie("user")
-//			console.log(String(data2))
+//			console.log(data2)
+			// var a="+";
+			// data2=data2.replace(/\+/g,"%2B")
 //			
+			// console.log(data2)
 			$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkLogin.do?userToken="+data2,function(data1){
-//				console.log(data1)
-				$('#login').text("已登录")
+				// console.log(data1)
+				// console.log(data1.data.userName)
+				$('#login').html(`<span>${data1.data.userName}</span>`)
+				$('#login').after(`<a href="../yonghuzhongxin/houtai.html" >用户中心</a>` )
 				$("#zhu").text("退出")
-			})
-			$("#zhu").click(function(){
-			var data2=getCookie("user")
-			$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/exitLogin.do?"+data2,function(data1){
 				
+				$('#floorNav').find('p').text("用户名："+data1.data.userName)
+				$('.login_btnbox').html(`<a href="../yonghuzhongxin/houtai.html" >用户中心</a>
+						<a href="javascript:;" id="tuichu" >退出</a>`)
+				
+				
+				
+				$("#tuichu").click(function(){
+				
+				var data2=getCookie("user")
+				$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/exitLogin.do?userToken="+data2,function(data){
+					console.log(data)
+					$('#login').text("登录")
+					$("#zhu").text("注册")
+				})
+				removeCookie("user");
+				location.reload()
+				return false;
+				})
+				
+			})
+			
+			//注销 退出
+			
+			
+		
+			
+			$("#zhu").click(function(){
+				
+			var data2=getCookie("user")
+			$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/exitLogin.do?userToken="+data2,function(data){
+				console.log(data)
 				$('#login').text("登录")
 				$("#zhu").text("注册")
 			})
 			removeCookie("user");
 			location.reload()
 			return false;
-		})
+			})
+			
+			
+//			
 		}
 		
 		
+		
+		
+		//登录
 		$('#btnLoginBarBtn').click(function(){
 			$(".login-section").css({display:"none"})
 			$(".bh").css({display:"none"})
@@ -452,18 +491,21 @@
 			
 			data=JSON.stringify(data);
 			
-//			console.log(data)
+			console.log(data)
 			$.ajax({
 				type:"POST",
 				contentType:"application/json",
 				data:data,
 				url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
 				async:true,
-				success:function(data){
-					console.log(data);
-					alert(data.msg)
-					if(data.code){
-						setCookie("user",data.data,7)
+				success:function(data3){
+					console.log(data3)
+					alert(data3.msg)
+					console.log(data3.data)
+					var a="+";
+					data3.data=data3.data.replace(/\+/g,"%2B")
+					if(data3.code){
+						setCookie("user",data3.data,7)
 						location.reload()
 					}
 					
