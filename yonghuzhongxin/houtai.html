@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>用户中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../node_modules/mdi/css/materialdesignicons.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/favicon.png" />
+	<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.mdc-persistent-drawer .mdc-drawer-item a:hover {
+				color: #d00;
+			}
+			
+			.xinxi {
+				width: 1000px;
+				background: #ecf7fd;
+			}
+			
+			.xinxi table {
+				border-collapse: collapse
+			}
+			
+			tr {
+				display: table-row;
+				vertical-align: inherit;
+				border-color: inherit;
+			}
+			
+			.xinxi td {
+				font-size: 18px;
+				padding: 6px;
+				line-height: 30px;
+				border: #bcd8e7 1px solid;
+			}
+			
+			.xinxi table font {
+				color: #cb0709;
+				padding: 0 2px;
+			}
+			
+			.xinxi table td a {
+				margin: 0 10px;
+			}
+			
+			.neirong h3 {
+				font-size: 16px;
+				height: 20px;
+				line-height: 20px;
+				margin: 20px 0;
+			}
+			
+			.neirong h3 span {
+				font-size: 12px;
+				color: #666;
+			}
+			
+			.neirong h3 span a {
+				color: #d00;
+				text-decoration: none;
+			}
+			
+			.btn-primary {
+				margin: 20px 5px 0 10px;
+			}
+		 .yxbk {
+    border: #ececec 1px solid;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+			.xz {
+				background: #f8f8f8;
+			}
+			
+			.xz td {
+				font-size: 14px;
+				line-height: 34px;
+				border-bottom: #ececec 1px solid;
+				padding: 0 5px;
+				height: 34px;
+				overflow: hidden;
+			}
+			.tixing {
+    text-align: center;
+    font-size: 14px;
+    padding: 30px 0;
+}
+#YX_nav_2{
+	display: none;
+}
+.mdc-persistent-drawer .mdc-drawer-item .mdc-drawer-link i.mdc-drawer-item-icon{
+	font-size: 1.5rem;
+	margin-top: 5px;
+}
+		</style>
+	</head>
+
+	<body>
+		<div class="body-wrapper">
+			<aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+				<nav class="mdc-persistent-drawer__drawer">
+					<div class="mdc-persistent-drawer__toolbar-spacer">
+						<a href="../html/index.html" class="brand-logo">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="mdc-list-group">
+						<nav class="mdc-list mdc-drawer-menu">
+							<div class="mdc-list-item mdc-drawer-item">
+								<h1 class="mdc-drawer-link" style="background: #cff;">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                我的主页
+              </h1>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+								<a class="mdc-drawer-link" href="#" id="myziliao">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i> 我的资料管理
+									<i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+								</a>
+								<div class="mdc-expansion-panel" id="ui-sub-menu">
+									<nav class="mdc-list mdc-drawer-submenu">
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="gaimima.html">
+												密码修改
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="#">
+												个人资料
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="#">
+												账号注销
+											</a>
+										</div>
+									</nav>
+								</div>
+							</div>
+
+							<div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="sample-page-submenu">
+								<a class="mdc-drawer-link" href="#" id="fabuxinxi">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i> 发布信息
+									<i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+								</a>
+								<div class="mdc-expansion-panel" id="sample-page-submenu">
+									<nav class="mdc-list mdc-drawer-submenu">
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="#">
+												招商代理供应
+											</a>
+											<a class="mdc-drawer-link" href="#">
+												发布
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="#">
+												展会信息
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="#">
+												发布
+											</a>
+										</div>
+									</nav>
+								</div>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item">
+								<a class="mdc-drawer-link" href="pages/ui-features/tables.html">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i> 企业建站
+								</a>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item">
+								<a class="mdc-drawer-link" href="pages/charts/chartjs.html">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i> 意见箱
+								</a>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item purchase-link">
+								<a href="../html/index.html" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
+									返回美酒招商首页
+								</a>
+							</div>
+						</nav>
+					</div>
+				</nav>
+			</aside>
+			<div class="neirong" style="margin-left: 270px;">
+				<h1>MAIN</h1>
+				<div class="xinxi">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td width="15%" align="center">
+									招商信息：
+								</td>
+								<td width="35%">
+									已发布
+									<font>0</font>条，
+									<a href="#" style="color: #ed4613">查看</a>|
+									<a href="#">点击这里发布</a>
+								</td>
+								<td width="15%" align="center">
+									代理信息：
+								</td>
+								<td width="35%">
+									已发布
+									<font>0</font>条，
+									<a href="#" style="color: #ed4613">查看</a>|
+									<a href="#">点击这里发布</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									供应信息：
+								</td>
+								<td>
+									已发布
+									<font>0</font>条，
+									<a href="#" style="color: #ed4613">查看</a>|
+									<a href="#">点击这里发布</a>
+								</td>
+								<td align="center">
+									展会信息：
+								</td>
+								<td>
+									已发布
+									<font>0</font>条，
+									<a href="#" style="color: #ed4613">查看</a>|
+									<a href="#">点击这里发布</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h3>您可能感兴趣的酒项目<span>（您目前感兴趣的项目是：<a href="#">白酒）</a></span>
+    		<button class="huan" style="border: 0;background: #d00;color: #fff;float: right;height: 26px;">换一批</button></h3>
+				<div class="mnrightbk" style="margin-top: 0;display: block;">
+					<img src="images/jmp.jpg" width="100%">
+				</div>
+				<p style="margin: 0;">
+					<button class="btn btn-primary collapsed" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="btndaili">
+        招商/代理/供应信息
+      </button>
+					<button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="btnzhanhui">
+        展会信息
+      </button>
+				</p>
+				<div class="yxbk" id="YX_nav_1" style="display: block;">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr class="xz">
+								<td width="45%">
+									<strong>标题</strong>
+								</td>
+								<td width="20%">
+									<strong>信息类别</strong>
+								</td>
+								<td width="22%">
+									<strong>状态</strong>
+								</td>
+								<td width="13%">
+									<strong>发布时间</strong>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="tixing">
+						暂无信息！
+					</div>
+				</div>
+				<div class="yxbk" id="YX_nav_2">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr class="xz">
+                        <td width="45%">
+                            <strong>展会名称</strong>
+                        </td>
+                        <td width="20%">
+                            <strong>点击次数</strong>
+                        </td>
+                        <td width="22%">
+                            <strong>信息状态</strong>
+                        </td>
+                        <td width="13%">
+                            <strong>发布时间</strong>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <div class="tixing">
+                    暂无信息
+                </div>
+            </div>
+			</div>
+	<script type="text/javascript">
+				$(function(){
+					$("#myziliao").click(function(){
+						$("#ui-sub-menu").css({"display":"block","height":"150px"})
+					})
+					$("#fabuxinxi").click(function(){
+						$("#sample-page-submenu").css({"display":"block","height":"200px"})
+					})
+					$("#btnzhanhui").click(function(){
+						$("#YX_nav_1").css("display","none");
+						$("#YX_nav_2").css("display","block");
+						$("#btndaili").css("color","#fff");
+						$("#btnzhanhui").css("color","#0f0");
+					})
+						$("#btndaili").click(function(){
+						$("#YX_nav_2").css("display","none");
+						$("#YX_nav_1").css("display","block");
+							$("#btnzhanhui").css("color","#fff");
+						$("#btndaili").css("color","#0f0");
+					})
+				})
+				
+	</script>
+	
+	</body>
+
+</html>
