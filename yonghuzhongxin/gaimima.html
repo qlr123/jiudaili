@@ -312,7 +312,7 @@
 
 				$('#btnSubmit').click(function(){
 					var sum = flag1+flag2+flag3;
-					console.log( flag1,flag2,flag3)
+					// console.log( flag1,flag2,flag3)
 					if(sum==3){
 						// console.log( flag1,flag2,flag3)
 						// console.log((getCookie("user")))
@@ -329,7 +329,7 @@
 						// 	}
 						// });
 						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userDetail/updatePassword.do?orPassword="+$("#tbOldPwd").val()+"&password="+$("#tbNewPwd").val()+"&rePassword="+$("#tbConfimNewPwd").val()+"&userToken="+getCookie("user"),function(data){
-							console.log(data)
+							// console.log(data)
 							alert(data.msg)
 						})
 					}

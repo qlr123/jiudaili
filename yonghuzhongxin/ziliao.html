@@ -367,9 +367,9 @@
 				if(getCookie("user")){
 						var data2=getCookie("user")
 						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userDetail/getUserInfo.do?userToken="+data2,function(data1){
-							console.log(data1)
+							// console.log(data1)
 							if(data1.code==0){
-								console.log('123')
+								// console.log('123')
 								location.href="../html/fabusj.html";
 							}
 							$('#username').text(data1.data.userName);
@@ -440,11 +440,8 @@
 					}      
 				});
 				$("#yanzhengma").change(function() {
-					console.log('123') 
 					var num = show_num.join(""); 
-					console.log(num)
 					var val = $("#yanzhengma").val().toLowerCase();
-					console.log(val==num)      
 					if(val==num) {
 						$("#yanzhengmaTip div").html("输入正确");
 						$("#yanzhengmaTip div").attr("class","onCorrect")
@@ -473,22 +470,23 @@
 					if(val == '') {
 						alert('请输入验证码！');
 					} else if(val == num) {
-//						alert('提交成功！');
-//						$("#yanzhengma").val('');
-						// draw(show_num);
-						$.ajax({
-						type:"POST",
-						contentType:"application/json",
-						data:data,
-						url:"http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
-						async:true,
-						success:function(data){
-//							console.log(data);
-							alert(data.msg)
-							setCookie("user",data.data,7)
-							location.href="index.html"
-						}
-						});
+						$.getJSON("http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userDetail/updateUserDetail.do?email="+$('#tbEmail').val()+"&name="+$('#tbChenHu').val()+"&nick="+$('#tbNickName').val()+"&phone="+$('#tbPhone').val()+"&qqcard="+$('#tbQQ').val()+"&tel="+$('#tbTel').val()+"&uaddress="+$('#tbAddress').val()+"&userToken="+getCookie("user"),function(data1){
+							if(data1.code==0){
+								location.href="../html/fabusj.html";
+							}else{
+								$('#username').text(data1.data.userName);
+							$('#tbChenHu').val(data1.data.name);
+							$('#tbNickName').val(data1.data.nick);
+							$('#tbPhone').val(data1.data.phone)
+							$('#tbTel').val(data1.data.tel)
+							$('#tbQQ').val(data1.data.qqcard)
+							$('#tbEmail').val(data1.data.email)
+							$('#tbAddress').val(data1.data.uaddress)
+							}
+							location.reload()
+							
+							
+						}) 
 						
 					} else {
 						alert('验证码错误！请重新输入！');

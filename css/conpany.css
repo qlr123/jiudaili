@@ -1,15 +1,4 @@
-body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,figure,figcaption{margin:0;padding:0}
-body{font:12px "微软雅黑","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%}
-a{color:#172c45;text-decoration:none}
-a:hover{color:#cd0200;text-decoration:underline}
-em{font-style:normal}
-li{list-style:none}
-img{border:0;}
 
-.top1{
-	width: 100%;
-	height: 56px;
-	}
 	
 .box1{
 	width: 1000px;
